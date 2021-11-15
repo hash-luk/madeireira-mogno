@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import GlobalStyles from './styles/GlobalStyles';
 import { Header } from './components/Header'
 import { Products } from './components/Products'
 import { Apresentation } from './components/Apresentation'
@@ -16,6 +16,7 @@ function App() {
       <Clientes />
       <Information />
       <Footer />
+      <GlobalStyles />
     </div>
   );
 }

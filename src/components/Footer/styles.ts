@@ -71,6 +71,18 @@ export const Container = styled.div`
             cursor: pointer;
         }
     }
+
+    @media(max-width:767px) {
+        height: 600px;
+
+        .info{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
 `
 
 export const Paragraph = styled.p`
@@ -83,4 +95,8 @@ export const Redes = styled.p`
     font-weight:500;
     font-size: 15pt;
     color: #1B676B;
+
+    @media(max-width:767px) {
+        height: 40px;
+    }
 `

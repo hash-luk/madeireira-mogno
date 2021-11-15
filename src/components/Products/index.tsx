@@ -9,6 +9,9 @@ import { CSSProperties } from "@material-ui/styles";
 import banner from "../../assets/Produtos/banner.jpeg";
 
 export const Products = () => {
+
+
+
   const arrowStyles: CSSProperties = {
     position: "absolute",
     zIndex: 2,
@@ -23,6 +26,7 @@ export const Products = () => {
 
   return (
     <C.Container>
+      <h3>Amostras</h3>
       <Carousel
         className="carousel"
         stopOnHover
@@ -64,6 +68,11 @@ export const Products = () => {
           <Product produto="Prod12" />
         </div>
       </Carousel>
+      <div className="responsive">
+        <Product produto="Prod01"/>
+        <Product produto="Prod05"/>
+        <Product produto="Prod09"/>
+      </div>
     </C.Container>
   );
 };

@@ -77,6 +77,26 @@ export const Container = styled.div`
             border: none;
         }
     }
+
+    @media(max-width: 767px) {
+        width: 100%;
+        height: 900px;
+
+        .content {
+            flex-direction: column;
+        }
+
+        #email {
+            width: 100%;
+            height: 50%;
+        }
+
+        #map {
+            width: 100%;
+            height: 50%;
+            margin-top: 30px;
+        }
+    }
 `
 
 export const SendButton = styled.button`

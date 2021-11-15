@@ -7,6 +7,13 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { CSSProperties } from "styled-components";
 
 export const Clientes = () => {
+
+  let windowWidth = window.innerWidth
+  let windowHeight = window.innerHeight
+  let showControlsCondition = windowWidth > 767 ? true : false
+
+  console.log(windowWidth , showControlsCondition)
+
   const arrowStyles: CSSProperties = {
     position: "absolute",
     zIndex: 2,
@@ -27,6 +34,7 @@ export const Clientes = () => {
         className="carousel"
         autoPlay
         infiniteLoop
+        showArrows={showControlsCondition}
         showStatus={false}
         swipeScrollTolerance={15}
         renderArrowPrev={(clickHandler: () => void, hasPrev, labelPrev) =>

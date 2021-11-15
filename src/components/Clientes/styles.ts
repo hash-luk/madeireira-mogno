@@ -60,4 +60,18 @@ export const Container = styled.div`
             background: #000;
         }
     }
+
+    @media(max-width: 767px) {
+        width: 100%;
+        margin-top: 40px;
+        
+        .carousel {
+            width: 90%;
+        }
+        
+        #opinions {
+            font-weight: 300;
+            max-width: 100%;
+        }
+    }
 `

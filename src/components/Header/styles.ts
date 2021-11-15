@@ -52,4 +52,13 @@ export const Container = styled.div`
             background-color: #86de26;
         }
     }
+
+    @media(max-width: 767px){
+        width: 100%;
+        .menu {
+            display: none;
+        }
+    }
+
+
 `

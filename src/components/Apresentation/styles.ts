@@ -40,7 +40,6 @@ export const Container = styled.div`
     }
 
     #fields {
-        /* border: 1px solid blue; */
         height: 300px;
         width: 90%;
         display: flex;
@@ -49,6 +48,25 @@ export const Container = styled.div`
         justify-content: space-evenly;
         position: relative;
 
+    }
+
+    @media(max-width: 767px) {
+        width: 100%;
+        
+        .logodiv {
+            display: none;
+        }
+        .bg {
+
+        }
+
+        .filter {
+            width: 100%;
+        }
+
+        img {
+            
+        }
     }
 `
 
@@ -64,7 +82,10 @@ export const FormGroup = styled.div`
     justify-content: space-evenly;
     margin: 250px 0px 0px 300px;
     box-shadow: 1px 1px 1px ;
-    /* border: 1px solid red; */
+
+    @media(max-width: 767px) {
+        display: none;
+    }
 `
 
 export const Title = styled.p`
@@ -81,7 +102,6 @@ export const Label = styled.label`
     pointer-events: none;
     padding: 0 5px;
     position: absolute;
-    /* border: 1px solid red; */
 `
 
 export const CheckBox = styled.input.attrs({type:'checkbox'})`
