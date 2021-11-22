@@ -52,7 +52,44 @@ export const Container = styled.div`
         justify-content: center;
     }
 
-    @media(max-width: 767px) {
+    @media screen and (max-width: 1024px) {
+        padding: 0;
+        margin-top: 25px;
+
+        .carousel {
+            width: 100%;
+        }
+
+        .prev, .next {
+            display: none;
+        }
+    }
+
+
+    @media screen and (max-width: 768px) {
+        padding: 0;
+        margin-top: 25px;
+
+        h3 {
+            display: block;
+        }
+
+        .carousel {
+            width: 900px;
+        }
+
+        .productsDiv {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .next, .prev {
+            display: none;
+        }
+
+    }
+
+    @media(max-width: 480px) {
         height: 100vh;
         
         .carousel {

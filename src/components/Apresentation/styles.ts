@@ -50,22 +50,47 @@ export const Container = styled.div`
 
     }
 
-    @media(max-width: 767px) {
+    @media screen and ( max-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .logodiv {
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            transform: translate(-285px,-250px);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .logodiv {
+            width: 300px;
+            height: 300px;
+            transform: translate(50px,-200px);
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
         
         .logodiv {
             display: none;
         }
-        .bg {
-
-        }
 
         .filter {
             width: 100%;
-        }
-
-        img {
-            
         }
     }
 `
@@ -83,8 +108,31 @@ export const FormGroup = styled.div`
     margin: 250px 0px 0px 300px;
     box-shadow: 1px 1px 1px ;
 
-    @media(max-width: 767px) {
-        display: none;
+
+    @media screen and (max-width: 1024px) {
+        margin: 0;
+        transform: translate(20px,100px);
+        width: 300px;
+    }
+
+    @media screen and (max-width: 768px) {
+        transform: translate(50px,-200px);
+    }
+
+    @media screen and (max-width: 480px) {
+        display: block;
+        margin: 0 auto;
+        transform: translate(0px,0px);
+        width: 256px;
+        
+        div {
+            margin-left: 5px;
+            width: 100%;
+        }
+
+        #terms {
+            margin: 0;
+        }
     }
 `
 
@@ -113,6 +161,18 @@ export const Terms = styled.label`
     color: #000;
     font-size: 10pt;
     margin-left: 0.5em;
+
+    @media screen and (max-width: 1024px) {
+        margin: 0px 0px 0px 5px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin: 0;
+    }
+
+    @media(max-width: 480px) {
+        margin-left: 0;
+    }
 `
 
 export const Request = styled.button`
@@ -129,6 +189,10 @@ export const Request = styled.button`
     :hover {
         cursor: pointer;
         transform: scale(1.05);
+    }
+
+    @media(max-width: 480px){
+        margin: 50px 0px 0px 10px;
     }
 `
 

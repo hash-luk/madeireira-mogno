@@ -1,4 +1,3 @@
-import React,{ useState } from 'react'
 import * as C from './styles'
 
 export const Information = () => {

@@ -6,9 +6,15 @@ import { Product } from "../ProductsCarrousel";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { CSSProperties } from "@material-ui/styles";
-import banner from "../../assets/Produtos/banner.jpeg";
 
 export const Products = () => {
+
+  let swidth = window.screen.width
+
+  window.addEventListener('resize', () => {
+    swidth = window.screen.width
+    console.log(swidth)
+  })
 
 
 
@@ -31,7 +37,8 @@ export const Products = () => {
         className="carousel"
         stopOnHover
         autoPlay
-        infiniteLoop
+        infiniteLoop = {swidth <=1024 ? false : true}
+        showIndicators = {swidth <=1024 ? false : true}
         showStatus={false}
         swipeScrollTolerance={15}
         renderArrowPrev={(clickHandler: () => void, hasPrev, labelPrev) =>

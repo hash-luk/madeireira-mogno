@@ -78,7 +78,51 @@ export const Container = styled.div`
         }
     }
 
-    @media(max-width: 767px) {
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        height: 800px;
+        margin: 0;
+
+        .content {
+            flex-direction: column;
+        }
+
+        #email {
+            width: 100%;
+            height: 50%;
+            padding: 0 200px;
+        }
+
+        #map {
+            width: 100%;
+            height: 50%;
+            margin-top: 20px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        height: 800px;
+        margin: 0;
+
+        .content {
+            flex-direction: column;
+        }
+
+        #email {
+            width: 100%;
+            height: 50%;
+            padding: 0px 40px;
+        }
+
+        #map {
+            width: 100%;
+            height: 50%;
+            margin-top: 30px;
+        }
+    }
+
+    @media(max-width: 480px) {
         width: 100%;
         height: 900px;
 
@@ -89,6 +133,10 @@ export const Container = styled.div`
         #email {
             width: 100%;
             height: 50%;
+
+            #field {
+                width: 100%;
+            }
         }
 
         #map {

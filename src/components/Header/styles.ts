@@ -30,6 +30,15 @@ export const Container = styled.div`
         }
     }
 
+    #links {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 6;
+        margin-top: 200px;
+        display: block;
+    }
+
     .menu {
         width: 700px;
         display: flex;
@@ -53,12 +62,58 @@ export const Container = styled.div`
         }
     }
 
-    @media(max-width: 767px){
+    .icon {
+        height: 100%;
+        width: 100px;
+        background-color: transparent;
+        color: #FFF;
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        .image {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+        position: relative;
+        .menu {
+            display: none;
+        }
+
+        .icon {
+            display: block;
+        }
+    }
+
+    @media(max-width: 480px){
         width: 100%;
         .menu {
             display: none;
         }
     }
 
+`
 
+export const ALinks = styled.a`
+    border-top: 1px solid #000;
+    width: 100%;
+    height: 50px;
+    background-color: #FDFDFD;
+    text-align: center;
+    font-weight:400;
+
+    @media(max-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 `

@@ -18,7 +18,7 @@ export const Container = styled.div`
         transition: all ease;
     }
 
-    #opinions {
+    .opinions {
         background-color: #FFA54F;
         width: 300px;
         color: #fff;
@@ -32,6 +32,10 @@ export const Container = styled.div`
         margin: 50px auto;
         padding: 0px 10px;
         text-align: center;
+
+        .opinions__ml1 {
+            margin-left: 5px;
+        }
 
         #line {
             width: 90%;
@@ -61,7 +65,23 @@ export const Container = styled.div`
         }
     }
 
-    @media(max-width: 767px) {
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 0;
+
+        .carousel{
+            width: 100%;
+        }
+
+        .opinions {
+            width: 100%;
+        } 
+        .prev,.next {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
         width: 100%;
         margin-top: 40px;
         
@@ -69,7 +89,7 @@ export const Container = styled.div`
             width: 90%;
         }
         
-        #opinions {
+        .opinions {
             font-weight: 300;
             max-width: 100%;
         }

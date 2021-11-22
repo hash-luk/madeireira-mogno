@@ -72,7 +72,39 @@ export const Container = styled.div`
         }
     }
 
-    @media(max-width:767px) {
+    @media screen and (max-width: 1024px) {
+        .info {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 500px;
+
+        .info {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 5px;
+        }
+
+        #left {
+            width: 100% !important;
+        }
+
+        #social {
+            justify-content: space-around;
+        }
+
+        #right {
+            width: 100% !important;
+            text-align: center;
+        }
+    }
+
+
+    @media screen and (max-width: 480px) {
         height: 600px;
 
         .info{
@@ -81,6 +113,23 @@ export const Container = styled.div`
             align-items: center;
             justify-content: center;
             text-align: center;
+            padding: 0px 5px;
+        }
+
+        #left {
+            width: 100% !important;
+        }
+
+        #social {
+            justify-content: space-around;
+        }
+
+        #right {
+            width: 100% !important;
+            p{
+                width: 100%;
+                text-align: center;
+            }
         }
     }
 `

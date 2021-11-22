@@ -9,7 +9,6 @@ import { CSSProperties } from "styled-components";
 export const Clientes = () => {
 
   let windowWidth = window.innerWidth
-  let windowHeight = window.innerHeight
   let showControlsCondition = windowWidth > 767 ? true : false
 
   console.log(windowWidth , showControlsCondition)
@@ -34,6 +33,7 @@ export const Clientes = () => {
         className="carousel"
         autoPlay
         infiniteLoop
+        showIndicators = {windowWidth <= 768 ? false : true}
         showArrows={showControlsCondition}
         showStatus={false}
         swipeScrollTolerance={15}
@@ -52,7 +52,20 @@ export const Clientes = () => {
           )
         }
       >
-        <div id="opinions">
+        <div className="opinions ">
+          <p>Nome</p>
+          <div id="line"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a
+            laoreet arcu. Pellentesque et ornare augue, ac varius arcu. Aenean
+            fringilla ultrices nibh at scelerisque. Vivamus orci urna, mollis a
+            mauris eu, scelerisque convallis lacus. Sed pretium lorem felis, nec
+            porta ipsum suscipit in. Vivamus pulvinar ultricies tortor, vitae
+            molestie felis commodo non. Curabitur iaculis fringilla justo,
+            ultricies aliquam mauris vestibulum sit amet.
+          </p>
+        </div> 
+        <div className="opinions opinions__ml1">
           <p>Nome</p>
           <div id="line"></div>
           <p>
@@ -65,20 +78,7 @@ export const Clientes = () => {
             ultricies aliquam mauris vestibulum sit amet.
           </p>
         </div>
-        <div id="opinions">
-          <p>Nome</p>
-          <div id="line"></div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a
-            laoreet arcu. Pellentesque et ornare augue, ac varius arcu. Aenean
-            fringilla ultrices nibh at scelerisque. Vivamus orci urna, mollis a
-            mauris eu, scelerisque convallis lacus. Sed pretium lorem felis, nec
-            porta ipsum suscipit in. Vivamus pulvinar ultricies tortor, vitae
-            molestie felis commodo non. Curabitur iaculis fringilla justo,
-            ultricies aliquam mauris vestibulum sit amet.
-          </p>
-        </div>
-        <div id="opinions">
+        <div className="opinions opinions__ml1">
           <p>Nome</p>
           <div id="line"></div>
           <p>
