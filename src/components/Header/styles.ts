@@ -36,7 +36,7 @@ export const Container = styled.div`
         position: absolute;
         z-index: 6;
         margin-top: 200px;
-        display: block;
+        display: none;
     }
 
     .menu {

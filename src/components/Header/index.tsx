@@ -5,14 +5,18 @@ import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
 
 export const Header = () => {
+
+    const links = document.getElementById("links") as HTMLDivElement
+
     function handleMenu() {
-        const links = document.getElementById("links") as HTMLDivElement
-    
         if(links?.style.display === "block") {
             links.style.display = "none"
+
         } else {
              links.style.display = "block"
         }
+
+        console.log(links.style.display)
     }
 
     return(
@@ -36,7 +40,7 @@ export const Header = () => {
                 <button id="about">SOBRE</button>
             </div>
             <a href="#" className="icon" onClick={handleMenu}>
-                <MenuIcon className="image"/>
+                {links.style.display === "block" ? <MenuOpenIcon className="image"/> : <MenuIcon className="image"/>}
             </a>
         </C.Container>
     );

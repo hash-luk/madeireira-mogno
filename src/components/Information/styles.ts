@@ -100,6 +100,7 @@ export const Container = styled.div`
         }
     }
 
+
     @media screen and (max-width: 768px) {
         width: 100%;
         height: 800px;
@@ -121,8 +122,26 @@ export const Container = styled.div`
             margin-top: 30px;
         }
     }
+    
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        height: 900px;
 
-    @media(max-width: 480px) {
+        .content {
+            flex-direction: column;
+        }
+
+        #email {
+            width: 100%;
+            height: 50%;
+
+            #field {
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
         width: 100%;
         height: 900px;
 

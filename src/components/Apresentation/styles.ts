@@ -78,6 +78,22 @@ export const Container = styled.div`
 
     }
 
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .logodiv {
+            display: none;
+        }
+
+        .filter {
+            width: 100%;
+        }
+    }
+
     @media screen and (max-width: 480px) {
         width: 100%;
         display: flex;
@@ -117,6 +133,10 @@ export const FormGroup = styled.div`
 
     @media screen and (max-width: 768px) {
         transform: translate(50px,-200px);
+    }
+
+    @media screen and (max-width: 600px) {
+        transform: translate(15px,-2px);
     }
 
     @media screen and (max-width: 480px) {

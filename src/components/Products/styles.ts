@@ -89,7 +89,30 @@ export const Container = styled.div`
 
     }
 
-    @media(max-width: 480px) {
+    @media screen and (max-width: 600px) {
+        height: 85vh;
+        
+        .carousel {
+            width: 100%;
+            display: none;
+        }
+
+        .productStyle:hover {
+            transform: scale(0.7);
+        }
+
+        .responsive {
+            display: flex;
+        } 
+
+        h3 {
+            display: block;
+            text-decoration: underline;
+        }
+            
+    }
+
+    @media screen and (max-width: 480px) {
         height: 100vh;
         
         .carousel {
