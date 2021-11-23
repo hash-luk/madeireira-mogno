@@ -81,6 +81,17 @@ export const Container = styled.div`
         }
     }
 
+    @media screen and (max-width: 600px) {
+        .carousel {
+            width: 100%;
+        }
+        .opinions {
+            width: 90%;
+            font-weight: 300;
+            font-size: 13px;
+        }
+    }
+
     @media screen and (max-width: 480px) {
         width: 100%;
         margin-top: 40px;

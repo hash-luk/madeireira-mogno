@@ -40,7 +40,7 @@ export const Header = () => {
                 <button id="about">SOBRE</button>
             </div>
             <a href="#" className="icon" onClick={handleMenu}>
-                <MenuIcon />
+                <MenuIcon className="image"/>
             </a>
         </C.Container>
     );
