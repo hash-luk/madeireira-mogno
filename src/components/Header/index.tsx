@@ -1,14 +1,14 @@
 import React from 'react';
 import * as C from "./styles";
 import MenuIcon from '@mui/icons-material/Menu';
-import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
 
 export const Header = () => {
 
-    const links = document.getElementById("links") as HTMLDivElement
+    
 
     function handleMenu() {
+        const links = document.getElementById("links") as HTMLDivElement
         if(links?.style.display === "block") {
             links.style.display = "none"
 
