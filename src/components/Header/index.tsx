@@ -40,7 +40,7 @@ export const Header = () => {
                 <button id="about">SOBRE</button>
             </div>
             <a href="#" className="icon" onClick={handleMenu}>
-                {links.style.display === "block" ? <MenuOpenIcon className="image"/> : <MenuIcon className="image"/>}
+                <MenuIcon />
             </a>
         </C.Container>
     );
