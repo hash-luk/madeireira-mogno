@@ -1,6 +1,15 @@
+import { useState } from 'react';
 import * as C from './styles'
 
+
 export const Information = () => {
+
+    const [fields, setFields] = useState({
+        name: '',
+        email: '',
+        telephone: '',
+        message: ''
+    })
 
     return(
         <C.Container>

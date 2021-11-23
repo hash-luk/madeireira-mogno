@@ -90,8 +90,8 @@ export const Container = styled.div`
         }
 
         .filter {
-            width: 100%;
-            height: 100%;
+            width: 101%;
+            height: 101%;
         }
     }
 

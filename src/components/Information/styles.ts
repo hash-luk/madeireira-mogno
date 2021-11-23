@@ -125,7 +125,7 @@ export const Container = styled.div`
     
     @media screen and (max-width: 600px) {
         width: 100%;
-        height: 900px;
+        height: 1000px;
 
         .content {
             flex-direction: column;
@@ -133,11 +133,22 @@ export const Container = styled.div`
 
         #email {
             width: 100%;
-            height: 50%;
+            height: 70%;
             padding: 0px !important;
 
+            #fields {
+                height: 90%;
+            }
+
+
             #field {
-                width: 100%;
+                height: 70px;
+                width: 80%;
+                flex-direction: column;
+
+                label {
+                    margin-bottom: 5px;
+                }
             }
         }
     }

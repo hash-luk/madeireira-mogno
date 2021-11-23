@@ -4,9 +4,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 
 export const Header = () => {
-
-    
-
     function handleMenu() {
         const links = document.getElementById("links") as HTMLDivElement
         if(links?.style.display === "block") {
@@ -15,8 +12,6 @@ export const Header = () => {
         } else {
              links.style.display = "block"
         }
-
-        console.log(links.style.display)
     }
 
     return(
