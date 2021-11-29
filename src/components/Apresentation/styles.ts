@@ -113,7 +113,7 @@ export const Container = styled.div`
 `
 
 export const FormGroup = styled.div`
-    width: 255px;
+    width: 263px;
     height: 478px;
     background-color: #FFF;
     position: absolute;
@@ -182,6 +182,7 @@ export const Terms = styled.label`
     color: #000;
     font-size: 10pt;
     margin-left: 0.5em;
+    white-space: nowrap;
 
     @media screen and (max-width: 1024px) {
         margin: 0px 0px 0px 5px;

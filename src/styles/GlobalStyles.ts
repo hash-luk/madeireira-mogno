@@ -13,4 +13,8 @@ export default createGlobalStyle`
         background-color: #111d27;
         -webkit-font-smoothing: antialiased !important;
     } 
+
+    html {
+        scroll-behavior: smooth;
+    }
 `

@@ -7,7 +7,7 @@ import { Clientes } from './components/Clientes'
 import { Information } from './components/Information'
 import { Footer } from './components/Footer'
 
-function App() {
+function Home() {
   return (
     <div id="container">
       <Header/>
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
