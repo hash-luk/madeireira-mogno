@@ -1,6 +1,10 @@
+import * as C from './styles'
+
 function Products() {
     return(
-        <div>Teste</div>
+        <C.Container>
+            
+        </C.Container>
     );
 }
 
