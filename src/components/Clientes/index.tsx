@@ -53,42 +53,26 @@ export const Clientes = () => {
         }
       >
         <div className="opinions ">
-          <p>Nome</p>
+          <p>Daniel Dutra</p>
           <div id="line"></div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a
-            laoreet arcu. Pellentesque et ornare augue, ac varius arcu. Aenean
-            fringilla ultrices nibh at scelerisque. Vivamus orci urna, mollis a
-            mauris eu, scelerisque convallis lacus. Sed pretium lorem felis, nec
-            porta ipsum suscipit in. Vivamus pulvinar ultricies tortor, vitae
-            molestie felis commodo non. Curabitur iaculis fringilla justo,
-            ultricies aliquam mauris vestibulum sit amet.
+            Melhor madeireira de Minas Gerais!
+            Os vendedores atendem muito bem!
+            A melhor no preço!
           </p>
         </div> 
         <div className="opinions opinions__ml1">
-          <p>Nome</p>
+          <p>Alef Silva</p>
           <div id="line"></div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a
-            laoreet arcu. Pellentesque et ornare augue, ac varius arcu. Aenean
-            fringilla ultrices nibh at scelerisque. Vivamus orci urna, mollis a
-            mauris eu, scelerisque convallis lacus. Sed pretium lorem felis, nec
-            porta ipsum suscipit in. Vivamus pulvinar ultricies tortor, vitae
-            molestie felis commodo non. Curabitur iaculis fringilla justo,
-            ultricies aliquam mauris vestibulum sit amet.
+            Qualidade, preço justo, prazo adequado e atendimento excelente!
           </p>
         </div>
         <div className="opinions opinions__ml1">
           <p>Nome</p>
           <div id="line"></div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a
-            laoreet arcu. Pellentesque et ornare augue, ac varius arcu. Aenean
-            fringilla ultrices nibh at scelerisque. Vivamus orci urna, mollis a
-            mauris eu, scelerisque convallis lacus. Sed pretium lorem felis, nec
-            porta ipsum suscipit in. Vivamus pulvinar ultricies tortor, vitae
-            molestie felis commodo non. Curabitur iaculis fringilla justo,
-            ultricies aliquam mauris vestibulum sit amet.
+            Toda equipe de atendimento muito atenciosa e dedicada, com ferragens de qualidade e o mais importante preço bom, vale a pena conferir. Parabéns a toda equipe da Madeireira Mogno!
           </p>
         </div>
       </Carousel>
