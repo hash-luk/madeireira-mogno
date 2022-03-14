@@ -5,9 +5,9 @@ import GlobalStyles from "../../styles/GlobalStyles";
 import { Header } from "../../components/Header";
 
 function Products() {
-  const $sudatidiv = document.querySelector(".sudati") as HTMLElement;
-  const $eucatexdiv = document.querySelector(".eucatex") as HTMLElement;
-  const $pcbdiv = document.querySelector(".pcb") as HTMLElement;
+  const $sudatidiv = document.querySelectorAll(".sudati")[0] as HTMLDivElement;
+  const $eucatexdiv = document.querySelectorAll(".eucatex")[0] as HTMLDivElement;
+  const $pcbdiv = document.querySelectorAll(".pcb")[0] as HTMLDivElement;
 
   function showSudati() {
     console.log('Eucatex', typeof($eucatexdiv))
