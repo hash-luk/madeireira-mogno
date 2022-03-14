@@ -10,6 +10,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     gap: 8px;
+    transition: all 0.2s ease-in-out;
   }
 
   .eucatex {
@@ -21,6 +22,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     gap: 8px;
+    transition: all 0.2s ease-in-out;
   }
 
   .pcb {
@@ -32,6 +34,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     gap: 8px;
+    transition: all 0.2s ease-in-out;
   }
 
   .prductsContent {

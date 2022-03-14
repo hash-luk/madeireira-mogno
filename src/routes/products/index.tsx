@@ -10,9 +10,9 @@ function Products() {
   const $pcbdiv = document.querySelector(".pcb") as HTMLElement;
 
   function showSudati() {
-    // console.log('Eucatex', typeof($eucatexdiv))
-    // console.log('Sudati', typeof($sudatidiv))
-    // console.log('PCB', typeof($pcbdiv))
+    console.log('Eucatex', typeof($eucatexdiv))
+    console.log('Sudati', typeof($sudatidiv))
+    console.log('PCB', typeof($pcbdiv))
 
     $sudatidiv.style.display = "flex";
     $eucatexdiv.style.display = "none";
@@ -20,9 +20,9 @@ function Products() {
   }
 
   function showEucatex() {
-    // console.log('Eucatex', typeof($eucatexdiv))
-    // console.log('Sudati', typeof($sudatidiv))
-    // console.log('PCB', typeof($pcbdiv))
+    console.log('Eucatex', typeof($eucatexdiv))
+    console.log('Sudati', typeof($sudatidiv))
+    console.log('PCB', typeof($pcbdiv))
 
     $sudatidiv.style.display = "none";
     $eucatexdiv.style.display = "flex";
@@ -30,9 +30,9 @@ function Products() {
   }
 
   function showPCB() {
-    // console.log('Eucatex', typeof($eucatexdiv))
-    // console.log('Sudati', typeof($sudatidiv))
-    // console.log('PCB', typeof($pcbdiv))
+    console.log('Eucatex', typeof($eucatexdiv))
+    console.log('Sudati', typeof($sudatidiv))
+    console.log('PCB', typeof($pcbdiv))
 
     $sudatidiv.style.display = "none";
     $eucatexdiv.style.display = "none";
