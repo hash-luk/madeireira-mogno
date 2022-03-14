@@ -5,11 +5,13 @@ import GlobalStyles from "../../styles/GlobalStyles";
 import { Header } from "../../components/Header";
 
 function Products() {
-  const $sudatidiv = document.querySelectorAll(".sudati")[0] as HTMLDivElement;
-  const $eucatexdiv = document.querySelectorAll(".eucatex")[0] as HTMLDivElement;
-  const $pcbdiv = document.querySelectorAll(".pcb")[0] as HTMLDivElement;
+
 
   function showSudati() {
+    const $sudatidiv = document.querySelector(".sudati") as HTMLDivElement;
+    const $eucatexdiv = document.querySelector(".eucatex") as HTMLDivElement;
+    const $pcbdiv = document.querySelector(".pcb") as HTMLDivElement;
+
     console.log('Eucatex', typeof($eucatexdiv))
     console.log('Sudati', typeof($sudatidiv))
     console.log('PCB', typeof($pcbdiv))
@@ -20,6 +22,11 @@ function Products() {
   }
 
   function showEucatex() {
+
+    const $sudatidiv = document.querySelector(".sudati") as HTMLDivElement;
+    const $eucatexdiv = document.querySelector(".eucatex") as HTMLDivElement;
+    const $pcbdiv = document.querySelector(".pcb") as HTMLDivElement;
+
     console.log('Eucatex', typeof($eucatexdiv))
     console.log('Sudati', typeof($sudatidiv))
     console.log('PCB', typeof($pcbdiv))
@@ -30,6 +37,11 @@ function Products() {
   }
 
   function showPCB() {
+
+    const $sudatidiv = document.querySelector(".sudati") as HTMLDivElement;
+    const $eucatexdiv = document.querySelector(".eucatex") as HTMLDivElement;
+    const $pcbdiv = document.querySelector(".pcb") as HTMLDivElement;
+    
     console.log('Eucatex', typeof($eucatexdiv))
     console.log('Sudati', typeof($sudatidiv))
     console.log('PCB', typeof($pcbdiv))
