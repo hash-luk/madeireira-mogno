@@ -14,6 +14,7 @@ import produto10 from "../../assets/Produtos/prod10.jpg";
 import produto11 from "../../assets/Produtos/prod11.jpg";
 import produto12 from "../../assets/Produtos/prod12.jpg";
 import { Header } from "../../components/Header";
+import { getData } from '../../requests';
 
 function Products() {
   return (
@@ -23,6 +24,7 @@ function Products() {
         <div id="line">
           <C.Bar>
             <h2>PRODUTOS</h2>
+            <button onClick={getData}>Click me</button>
           </C.Bar>
         </div>
         <div className="content">

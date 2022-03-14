@@ -1,0 +1,390 @@
+{
+  "brands": {
+    "pcb": [
+      {
+        "id": 1,
+        "name": "MDF AUREA IMPERIAL 15 MM"
+      },
+      {
+        "id": 2,
+        "name": "MDF BRANCO MAX AC 15 MM"
+      },
+      {
+        "id": 3,
+        "name": "MDF BRANCO TX 15 MM"
+      },
+      {
+        "id": 4,
+        "name": "MDF CAFÉ TORRADO 15 MM"
+      },
+      {
+        "id": 5,
+        "name": "MDF CARAVELA 15 MM"
+      },
+      {
+        "id": 6,
+        "name": "MDF CARVALHO AICANÃ 15 MM"
+      },
+      {
+        "id": 7,
+        "name": "MDF CARVALHO CAETE 15 MM"
+      },
+      {
+        "id": 8,
+        "name": "MDF CARVALHO TUPI 15 MM"
+      },
+      {
+        "id": 9,
+        "name": "MDF CASTANHA DE CAJU 06 MM"
+      },
+      {
+        "id": 10,
+        "name": "MDF CASTANAHA DE CAJU 15 MM"
+      },
+      {
+        "id": 11,
+        "name": "MDF CINZA DE CRISTAL 15 MM"
+      },
+      {
+        "id": 12,
+        "name": "MDF CONGO CAPIXABA 15 MM"
+      },
+      {
+        "id": 13,
+        "name": "MDF ELMO ARACRUZ 06 MM"
+      },
+      {
+        "id": 14,
+        "name": "MDF ELMO ARACRUZ 15 MM"
+      },
+      {
+        "id": 15,
+        "name": "MDF ELMO PALMARES 06 MM"
+      },
+      {
+        "id": 16,
+        "name": "MDF ELMO PALMARES 15 MM"
+      },
+      {
+        "id": 17,
+        "name": "MDF FREIJÓ 06 MM"
+      },
+      {
+        "id": 18,
+        "name": "MDF FREIJÓ 15 MM"
+      },
+      {
+        "id": 19,
+        "name": "MDF JACARANDÁ 06 MM"
+      },
+      {
+        "id": 20,
+        "name": "MDF JACARANDÁ 15 MM"
+      },
+      {
+        "id": 19,
+        "name": "MDF MANCANAIBA 15 MM"
+      },
+      {
+        "id": 21,
+        "name": "MDF NOGUEIRA ARROIO 15 MM"
+      },
+      {
+        "id": 22,
+        "name": "MDF NOGUIEIRA CAIAPÓ 06 MM"
+      },
+      {
+        "id": 23,
+        "name": "MDF NOGUIEIRA CAIAPÓ 15 MM"
+      },
+      {
+        "id": 24,
+        "name": "MDF NOGUIEIRA GOITACÁ 15 MM"
+      },
+      {
+        "id": 25,
+        "name": "MDF PIMENTA DO REINO 15 MM"
+      },
+      {
+        "id": 26,
+        "name": "MDF PITANGA 15 MM"
+      },
+      {
+        "id": 27,
+        "name": "MDF PITANGA 15 MM"
+      },
+      {
+        "id": 28,
+        "name": "MDF SAMBA 15 MM"
+      },
+      {
+        "id": 29,
+        "name": "MDF TAPIOCA 06 MM"
+      },
+      {
+        "id": 30,
+        "name": "MDF TAPIOCA 15 MM"
+      },
+      {
+        "id": 31,
+        "name": "MDF VILA VELHA 15 MM"
+      },
+      {
+        "id": 32,
+        "name": "MDF VITÓRIA RÉGIA 15 MM"
+      }
+    ],
+    "sudati": [
+      {
+        "id": 33,
+        "name": "MDF MANHATTAN 15 MM 2 FACES"
+      },
+      {
+        "id": 34,
+        "name": "MDF SANTIAGO 15 MM 2 FACES"
+      },
+      {
+        "id": 35,
+        "name": "MDF ARGEL 15 MM 2 FACES"
+      },
+      {
+        "id": 36,
+        "name": "MDF ASTI 15 MM 2 FACES"
+      },
+      {
+        "id": 37,
+        "name": "MDF BEGE/OVO 15 MM 2 FACES"
+      },
+      {
+        "id": 38,
+        "name": "MDF BELLINI 15 MM 2 FACES"
+      },
+      {
+        "id": 39,
+        "name": "MDF BIANCO RAVENA 15 MM 2 FACES"
+      },
+      {
+        "id": 39,
+        "name": "MDF BRANCO TC 15 MM 2 FACES"
+      },
+      {
+        "id": 40,
+        "name": "MDF CABERNET 15 MM 2 FACES"
+      },
+      {
+        "id": 41,
+        "name": "MDF CAMBIASI 15 MM 2 FACES"
+      },
+      {
+        "id": 42,
+        "name": "MDF CARVALHO NATURAL 15 MM 2 FACES"
+      },
+      {
+        "id": 42,
+        "name": "MDF CASTELLI 15 MM 2 FACES"
+      },
+      {
+        "id": 43,
+        "name": "MDF CINZA CRISTAL 15 MM 2 FACES"
+      },
+      {
+        "id": 44,
+        "name": "MDF CORAZZI 15 MM 2 FACES"
+      },
+      {
+        "id": 45,
+        "name": "MDF FLORIPA 15 MM 2 FACES"
+      },
+      {
+        "id": 46,
+        "name": "MDF GLAMOUR 15 MM 2 FACES"
+      },
+      {
+        "id": 47,
+        "name": "MDF HAVANA 15 MM 2 FACES"
+      },
+      {
+        "id": 48,
+        "name": "MDF IMBUIA 15 MM 2 FACES"
+      },
+      {
+        "id": 49,
+        "name": "MDF ITAUBA 15 MM 2 FACES"
+      },
+      {
+        "id": 50,
+        "name": "MDF LOURO FREIJÓ 15 MM 2 FACES"
+      },
+      {
+        "id": 51,
+        "name": "MDF MOLINARA 15 MM 2 FACES"
+      },
+      {
+        "id": 52,
+        "name": "MDF MOSCATO 15 MM 2 FACES"
+      },
+      {
+        "id": 53,
+        "name": "MDF PISANO 15 MM 2 FACES"
+      },
+      {
+        "id": 54,
+        "name": "MDF ROSELLI 15 MM 2 FACES"
+      },
+      {
+        "id": 55,
+        "name": "MDF SAMPA 15 MM 2 FACES"
+      },
+      {
+        "id": 56,
+        "name": "MDF TAURI 15 MM 2 FACES"
+      },
+      {
+        "id": 57,
+        "name": "MDF TEMPRANILLO 15 MM 2 FACES"
+      },
+      {
+        "id": 58,
+        "name": "MDF TREBBIANO BLANC 15 MM 2 FACES"
+      },
+      {
+        "id": 59,
+        "name": "MDF VULCANO 15 MM 2 FACES"
+      }
+    ],
+    "eucatex": [
+      {
+        "id": 60,
+        "name": "HDF BRANCO 03 MM 1 FACE"
+      },
+      {
+        "id": 61,
+        "name": "HDF BRANCO 4,5 MM 1 FACE"
+      },
+      {
+        "id": 62,
+        "name": "HDF CINZA ITÁLIA 06 MM"
+      },
+      {
+        "id": 63,
+        "name": "HDF FUME CLÁSSICO 06 MM"
+      },
+      {
+        "id": 64,
+        "name": "HDF LACCA FUME 06 MM"
+      },
+      {
+        "id": 65,
+        "name": "MDF ARENAS GRAFIS 06 MM"
+      },
+      {
+        "id": 66,
+        "name": "MDF BRANCO MAX AC 15 MM"
+      },
+      {
+        "id": 67,
+        "name": "MDF BRANCO TX 15 MM"
+      },
+      {
+        "id": 68,
+        "name": "MDF CARBONO C/ FILMES RAIZES 15 MM"
+      },
+      {
+        "id": 69,
+        "name": "MDF CARVALHO CANELA RAIZES 15 MM"
+      },
+      {
+        "id": 70,
+        "name": "MDF CASTANHO BRONZE C/ FILME MATT PLUS 15 MM"
+      },
+      {
+        "id": 71,
+        "name": "MDF CINNMMON GRAFIS 15 MM"
+      },
+      {
+        "id": 72,
+        "name": "MDF ELMO MACCIATO MATT PLUS 15 MM"
+      },
+      {
+        "id": 73,
+        "name": "MDF FREIJÓ AMBAR RAÍZES 15 MM"
+      },
+      {
+        "id": 74,
+        "name": "MDF FREIJÓ ESCURO C/ FILME RAÍZES 15 MM"
+      },
+      {
+        "id": 75,
+        "name": "MDF FUME CLÁSSICO 15 MM"
+      },
+      {
+        "id": 76,
+        "name": "MDF FUME CETTIN LACCA 15 MM"
+      },
+      {
+        "id": 77,
+        "name": "MDF FUME LACCA AD 15 MM"
+      },
+      {
+        "id": 78,
+        "name": "MDF GRANI MATT PLUS 15 MM"
+      },
+      {
+        "id": 79,
+        "name": "MDF IMBUIA TERRA C/ FILME RAÍZES 15 MM"
+      },
+      {
+        "id": 80,
+        "name": "MDF ITALIAN NOCE MATT PLUS 15 MM"
+      },
+      {
+        "id": 81,
+        "name": "MDF LACCA AD BRANCO NEVE 15 MM"
+      },
+      {
+        "id": 82,
+        "name": "MDF LACCA AD CINZA ITALIA 15 MM"
+      },
+      {
+        "id": 83,
+        "name": "MDF LACCA AD OXID 15 MM"
+      },
+      {
+        "id": 84,
+        "name": "MDF LACCA AD PRETO ONIX 15 MM"
+      },
+      {
+        "id": 85,
+        "name": "MDF LACCA ARGENTO 15 MM"
+      },
+      {
+        "id": 86,
+        "name": "MDF LACCA CETIN GRAFITE 15 MM"
+      },
+      {
+        "id": 87,
+        "name": "MDF LACCA MT ESCOVADO 15 MM"
+      },
+      {
+        "id": 88,
+        "name": "MDF LAMINA DOURADA RAÍZES 15 MM"
+      },
+      {
+        "id": 89,
+        "name": "MDF LAMINA NATURALLE RAÍZES 15 MM"
+      },
+      {
+        "id": 90,
+        "name": "MDF EGNO CREMA MATT PLUS 15 MM"
+      },
+      {
+        "id": 91,
+        "name": "MDF NOCE ORO RAÍZES 15 MM"
+      },
+      {
+        "id": 92,
+        "name": "MDF NÓRDICO RAÍZES 15 MM"
+      }
+    ]
+  }
+}
