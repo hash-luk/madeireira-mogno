@@ -68,7 +68,7 @@ export const Header = () => {
           onClick={home}
           value="INICIO"
         >
-          TESTE
+          INICIO
         </C.AnimateButton>
         <C.AnimateButton
           id="products"

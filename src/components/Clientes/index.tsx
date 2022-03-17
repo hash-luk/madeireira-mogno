@@ -69,7 +69,7 @@ export const Clientes = () => {
           </p>
         </div>
         <div className="opinions opinions__ml1">
-          <p>Nome</p>
+          <p>Paulo Moreira</p>
           <div id="line"></div>
           <p>
             Toda equipe de atendimento muito atenciosa e dedicada, com ferragens de qualidade e o mais importante preço bom, vale a pena conferir. Parabéns a toda equipe da Madeireira Mogno!
