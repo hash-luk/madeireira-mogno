@@ -101,9 +101,9 @@ export const Header = () => {
           SOBRE
         </C.AnimateButton>
       </div>
-      <a href="#" className="icon" onClick={handleMenu}>
+      <button className="icon" onClick={handleMenu}>
         <MenuIcon className="image" />
-      </a>
+      </button>
     </C.Container>
   );
 };

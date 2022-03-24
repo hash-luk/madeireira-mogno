@@ -8,7 +8,7 @@ import About from './routes/about'
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <>
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}/>
@@ -17,7 +17,7 @@ ReactDOM.render(
       <Route path="/sobre" element={<About />} />
     </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
+  </>,
   document.getElementById('root')
 );
 

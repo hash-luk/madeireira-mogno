@@ -22,10 +22,10 @@ export const Footer =() => {
                     </div>
                 </div>
                 <div id="right">
-                    <a href="#">Início</a>
-                    <a href="#">Produtos</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">Contato</a>
+                    <a href="/">Início</a>
+                    <a href="/produtos">Produtos</a>
+                    <a href="/sobre">Sobre</a>
+                    <a href="/contato">Contato</a>
                     <p>© Copyright © 2021 Todos os direitos reservados</p>
                 </div>
             </div>

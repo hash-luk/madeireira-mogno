@@ -1,5 +1,4 @@
 import { useState } from "react";
-import $ from "jquery";
 import * as C from "./styles";
 import bg from "../../assets/bg/bg-main.jpg";
 import logo from "../../assets/logo.png";
@@ -18,19 +17,6 @@ export const Apresentation = () => {
   const [goal, setGoal] = useState("");
   const [message, setMessage] = useState("");
 
-  // Precisa do Wpp businness para usar API
-  // var settings = {
-  //   "url": "https://lzwyn2.api.infobip.com/whatsapp/1/message/text",
-  //   "method": "POST",
-  //   "timeout": 0,
-  //   "headers": {
-  //       "Authorization": "App b1b098b440c49771001071cdd516244d-3d5a9b1c-d20a-4cde-a53e-71f3f62ac435",
-  //       "Content-Type": "application/json",
-  //       "Accept": "application/json"
-  //   },
-  //   "data": JSON.stringify({"from":telephone,"to":"5531985098814","messageId":"a28dd97c-1ffb-4fcf-99f1-0b557ed381da","content":{"text":"Gostaria de realizar uma cotação"},"callbackData":"Callback data"}),
-  // }
-
   function handleInformation() {
 
     if(checkbox.checked && name!== "" && email !== "" && telephone !== "" && goal !== "" && message !=="") {
@@ -46,14 +32,6 @@ export const Apresentation = () => {
     } else {
       alert("Preencha os campos")
     }
-    
-    // try{
-    //   $.ajax(settings).done(function (response){
-    //     console.log(response)
-    //   })
-    // } catch {
-    //   console.log("Erro ao enviar mensagem")
-    // }
   }
 
   return (
@@ -104,7 +82,7 @@ export const Apresentation = () => {
           <C.Terms>
             ACEITO A
             <b>
-              <a href="#">POLÍTICA DE PRIVACIDADE</a>
+              <a href="/">POLÍTICA DE PRIVACIDADE</a>
             </b>
           </C.Terms>
         </div>

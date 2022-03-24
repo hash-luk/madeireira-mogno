@@ -1,22 +1,19 @@
-import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import * as C from "./styles";
 import { Product } from "../ProductsCarrousel";
+import { CSSProperties } from "@material-ui/styles";
+import { products } from "../../data/products";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { CSSProperties } from "@material-ui/styles";
+import * as C from "./styles";
 
 export const Products = () => {
+  let swidth = window.screen.width;
 
-  let swidth = window.screen.width
-
-  window.addEventListener('resize', () => {
-    swidth = window.screen.width
-    console.log(swidth)
-  })
-
-
+  window.addEventListener("resize", () => {
+    swidth = window.screen.width;
+  });
 
   const arrowStyles: CSSProperties = {
     position: "absolute",
@@ -30,15 +27,28 @@ export const Products = () => {
     color: "#FFF",
   };
 
+  const productsComponents = products.map((product) => {
+    return (
+      <Product
+        key={product.id}
+        id={product.id}
+        name={product.name}
+        altText={product.altText}
+        imageURL={product.imageURL}
+      />
+    );
+  });
+
   return (
     <C.Container>
       <h3>Amostras</h3>
       <Carousel
+        showThumbs={false}
         className="carousel"
         stopOnHover
         autoPlay
-        infiniteLoop = {swidth <=1024 ? false : true}
-        showIndicators = {swidth <=1024 ? false : true}
+        infiniteLoop={swidth <= 1024 ? false : true}
+        showIndicators={swidth <= 1024 ? false : true}
         showStatus={false}
         swipeScrollTolerance={15}
         renderArrowPrev={(clickHandler: () => void, hasPrev, labelPrev) =>
@@ -57,28 +67,17 @@ export const Products = () => {
         }
       >
         <div className="productsDiv">
-          <Product produto="Prod01" />
-          <Product produto="Prod02" />
-          <Product produto="Prod03" />
-          <Product produto="Prod04" />
+          {productsComponents.filter((product, idx) => idx < 3)}
         </div>
         <div className="productsDiv">
-          <Product produto="Prod05" />
-          <Product produto="Prod06" />
-          <Product produto="Prod07" />
-          <Product produto="Prod08" />
+          {productsComponents.filter((product, idx) => idx > 3 && idx < 7)}
         </div>
         <div className="productsDiv">
-          <Product produto="Prod09" />
-          <Product produto="Prod10" />
-          <Product produto="Prod11" />
-          <Product produto="Prod12" />
+          {productsComponents.filter((product, idx) => idx > 7 && idx < 11)}
         </div>
       </Carousel>
       <div className="responsive">
-        <Product produto="Prod01"/>
-        <Product produto="Prod05"/>
-        <Product produto="Prod09"/>
+        {productsComponents.filter((product, idx) => idx < 3)}
       </div>
     </C.Container>
   );

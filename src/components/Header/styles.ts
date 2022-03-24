@@ -71,6 +71,7 @@ export const Container = styled.div`
     position: absolute;
     right: 0;
     top: 0;
+    border: none;
 
     .image {
       width: 100%;

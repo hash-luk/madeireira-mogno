@@ -6,15 +6,10 @@ import { Header } from "../../components/Header";
 
 function Products() {
 
-
   function showSudati() {
     const $sudatidiv = document.querySelector(".sudati") as HTMLDivElement;
     const $eucatexdiv = document.querySelector(".eucatex") as HTMLDivElement;
     const $pcbdiv = document.querySelector(".pcb") as HTMLDivElement;
-
-    console.log('Eucatex', typeof($eucatexdiv))
-    console.log('Sudati', typeof($sudatidiv))
-    console.log('PCB', typeof($pcbdiv))
 
     $sudatidiv.style.display = "flex";
     $eucatexdiv.style.display = "none";
@@ -27,10 +22,6 @@ function Products() {
     const $eucatexdiv = document.querySelector(".eucatex") as HTMLDivElement;
     const $pcbdiv = document.querySelector(".pcb") as HTMLDivElement;
 
-    console.log('Eucatex', typeof($eucatexdiv))
-    console.log('Sudati', typeof($sudatidiv))
-    console.log('PCB', typeof($pcbdiv))
-
     $sudatidiv.style.display = "none";
     $eucatexdiv.style.display = "flex";
     $pcbdiv.style.display = "none";
@@ -42,10 +33,6 @@ function Products() {
     const $eucatexdiv = document.querySelector(".eucatex") as HTMLDivElement;
     const $pcbdiv = document.querySelector(".pcb") as HTMLDivElement;
     
-    console.log('Eucatex', typeof($eucatexdiv))
-    console.log('Sudati', typeof($sudatidiv))
-    console.log('PCB', typeof($pcbdiv))
-
     $sudatidiv.style.display = "none";
     $eucatexdiv.style.display = "none";
     $pcbdiv.style.display = "flex";
@@ -67,17 +54,17 @@ function Products() {
             </div>
         <div className="sudati">
           {brands.sudati.map((product) => (
-            <C.ProductBox>{product.name}</C.ProductBox>
+            <C.ProductBox key={product.id}>{product.name}</C.ProductBox>
           ))}
         </div>
         <div className="eucatex">
           {brands.eucatex.map((product) => (
-            <C.ProductBox>{product.name}</C.ProductBox>
+            <C.ProductBox key={product.id}>{product.name}</C.ProductBox>
           ))}
         </div>
         <div className="pcb">
           {brands.pcb.map((product) => (
-            <C.ProductBox>{product.name}</C.ProductBox>
+            <C.ProductBox key={product.id}>{product.name}</C.ProductBox>
           ))}
         </div>
       </div>

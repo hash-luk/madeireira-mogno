@@ -63,6 +63,15 @@ export const Container = styled.div`
             height: 40px;
             background: #000;
         }
+
+        .opinion {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
     }
 
     @media screen and (max-width: 768px) {
