@@ -11,7 +11,7 @@ export const Footer =() => {
                 <div id="left">
                     <C.Paragraph>R. Doze, 42 - Inconfidentes, Contagem - MG, 32260-210</C.Paragraph>
                     <C.Paragraph>(31) 3397-9765</C.Paragraph>
-                    <C.Paragraph>email@gmail.com</C.Paragraph>
+                    <C.Paragraph>contatomadeireiramogno@gmail.com</C.Paragraph>
                     <div id="social">
                         <C.Redes>REDES</C.Redes>
                         <div id="icons">
