@@ -1,3 +1,5 @@
+//eslint-disable-next-line
+
 import { useState } from "react";
 import * as C from "./styles";
 import bg from "../../assets/bg/bg-main.jpg";
@@ -9,7 +11,7 @@ export const Apresentation = () => {
   const telephoneInput = document.getElementById("telephonefield") as HTMLInputElement
   const finalityInput = document.getElementById("fianlityfield") as HTMLInputElement
   const messageInput = document.getElementById("messagefield") as HTMLInputElement
-  const checkbox = document.getElementById("requiredCheckbox") as HTMLInputElement
+
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -18,6 +20,8 @@ export const Apresentation = () => {
   const [message, setMessage] = useState("");
 
   function handleInformation() {
+
+    const checkbox = document.querySelector(".privacy") as HTMLInputElement
 
     if(checkbox.checked && name!== "" && email !== "" && telephone !== "" && goal !== "" && message !=="") {
       window.open(
@@ -78,7 +82,7 @@ export const Apresentation = () => {
           </div>
         </div>
         <div id="terms">
-          <C.CheckBox required id="requiredCheckbox"/>
+          <C.CheckBox required id="requiredCheckbox" className="privacy"/>
           <C.Terms>
             ACEITO A
             <b>

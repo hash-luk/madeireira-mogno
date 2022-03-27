@@ -2,7 +2,6 @@ import React from "react";
 import * as C from './styles'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export const Footer =() => {
     return(
@@ -17,7 +16,7 @@ export const Footer =() => {
                         <C.Redes>REDES</C.Redes>
                         <div id="icons">
                             <a href="https://www.instagram.com/madeireira_mogno/"><InstagramIcon className="icon"/></a>
-                            <a href="/"></a><FacebookIcon  className="icon"/>
+                            <a href="/"> </a><FacebookIcon  className="icon"/>
                             
                         </div>
                     </div>
