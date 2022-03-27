@@ -10,6 +10,10 @@ export const Container = styled.div`
     
     h2 {
         font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
     }
 
     .content {

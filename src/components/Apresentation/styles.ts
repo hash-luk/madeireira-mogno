@@ -162,6 +162,10 @@ export const Title = styled.p`
     font-weight: 700;
     font-size: 14pt;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 `
 
 export const Label = styled.label`

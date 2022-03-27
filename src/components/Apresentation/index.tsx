@@ -2,6 +2,7 @@ import { useState } from "react";
 import * as C from "./styles";
 import bg from "../../assets/bg/bg-main.jpg";
 import logo from "../../assets/logo.png";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export const Apresentation = () => {
   const nameInput = document.getElementById("namefield") as HTMLInputElement
@@ -39,7 +40,7 @@ export const Apresentation = () => {
   return (
     <C.Container>
       <C.FormGroup>
-        <C.Title>SOLICITAR COTAÇÃO</C.Title>
+        <C.Title>SOLICITAR COTAÇÃO <WhatsAppIcon /></C.Title>
         <div id="fields">
           <div>
             <C.Input

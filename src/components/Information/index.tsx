@@ -3,6 +3,7 @@ import {Modal,Typography,Box} from "@material-ui/core";
 import InputMask from "react-input-mask";
 import emailjs from "emailjs-com";
 import * as C from "./styles";
+import EmailIcon from '@mui/icons-material/Email';
 
 export const Information = () => {
   const [open, setOpen] = useState(false);
@@ -84,7 +85,7 @@ export const Information = () => {
       </Modal>
       <div className="content">
         <div id="email">
-          <h2>Fale Conosco</h2>
+          <h2>Fale Conosco <EmailIcon /></h2>
 
           <div id="fields">
             <div id="field">

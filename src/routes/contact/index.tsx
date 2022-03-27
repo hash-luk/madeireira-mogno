@@ -8,6 +8,12 @@ import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 function Contact() {
+  function handleWhatsApp() {
+    window.open(
+      "https://wa.me/553192071285?text=Estou%20interessado%20em%20seus%20painéis%20de%20MDF"
+    )
+  }
+
   return (
     <C.Container>
       <Header />
@@ -50,7 +56,7 @@ function Contact() {
             <PhoneIcon />
             Telefone: (31) 3397-9765
           </p>
-          <p>
+          <p onClick={handleWhatsApp}>
             <WhatsAppIcon /> WhatsApp
           </p>
         </div>
