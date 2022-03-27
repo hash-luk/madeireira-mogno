@@ -9,7 +9,8 @@ export const Footer =() => {
         <C.Container>
             <div className="info">
                 <div id="left">
-                    <C.Paragraph>R. Doze, 42 - Inconfidentes, Contagem - MG, 32260-210</C.Paragraph>
+                    <C.Paragraph> <b>Loja 1:</b> R. Doze, 42 - Inconfidentes, Contagem - MG, 32260-210</C.Paragraph>
+                    <C.Paragraph> <b>Loja 2:</b> R. José Gomes do Amaral, 72 - Vila Amaral, Betim - MG, 32603-090</C.Paragraph>
                     <C.Paragraph>(31) 3397-9765</C.Paragraph>
                     <C.Paragraph>contatomadeireiramogno@gmail.com</C.Paragraph>
                     <div id="social">

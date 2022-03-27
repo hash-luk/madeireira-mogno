@@ -47,6 +47,42 @@ export const Container = styled.div`
             margin-top: 7px;
         }
     }
+
+    #contacts {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        margin: 0 auto;
+        color: #FFF;
+        width: 100%;
+        height: 180px;
+    }
+
+    #channels {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        gap: 15px;
+
+        p {
+            font-size: 14pt;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            gap: 10px;
+            cursor: pointer;
+            transition: all .2s ease-in;
+        }
+
+        p:hover {
+            transform: scale(1.05);
+        }
+    }
 `
 
 export const Form = styled.form`
