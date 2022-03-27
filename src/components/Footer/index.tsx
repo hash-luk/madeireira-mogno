@@ -16,9 +16,9 @@ export const Footer =() => {
                     <div id="social">
                         <C.Redes>REDES</C.Redes>
                         <div id="icons">
-                            <InstagramIcon className="icon"/>
-                            <FacebookIcon  className="icon"/>
-                            <LinkedInIcon  className="icon"/>
+                            <a href="https://www.instagram.com/madeireira_mogno/"><InstagramIcon className="icon"/></a>
+                            <a href="/"></a><FacebookIcon  className="icon"/>
+                            
                         </div>
                     </div>
                 </div>
@@ -27,7 +27,7 @@ export const Footer =() => {
                     <a href="/produtos">Produtos</a>
                     <a href="/sobre">Sobre</a>
                     <a href="/contato">Contato</a>
-                    <p>© Copyright © 2021 Todos os direitos reservados</p>
+                    <p>© Copyright © 2021 Todos os direitos reservados à Madeireira Mogno</p>
                 </div>
             </div>
         </C.Container>

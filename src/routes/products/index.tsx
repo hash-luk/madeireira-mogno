@@ -5,6 +5,7 @@ import GlobalStyles from "../../styles/GlobalStyles";
 import { Header } from "../../components/Header";
 
 function Products() {
+
   function showSudati() {
     const $sudatidiv = document.querySelector(".sudati") as HTMLDivElement;
     const $eucatexdiv = document.querySelector(".eucatex") as HTMLDivElement;

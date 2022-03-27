@@ -55,7 +55,7 @@ export const Container = styled.div`
         }
 
         #icons {
-            width: 40%;
+            width: 20%;
             display: flex;
             flex-direction: row;
             align-items: center;
