@@ -1,5 +1,3 @@
-//eslint-disable-next-line
-
 import { useState } from "react";
 import * as C from "./styles";
 import bg from "../../assets/bg/bg-main.jpg";
