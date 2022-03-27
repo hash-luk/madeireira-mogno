@@ -6,7 +6,7 @@ export const button = styled.div`
     z-index: 999;
     left: 20px;
     bottom: 30px;
-    width: 90px !important;
+    width: 90px;
     height: 90px;
     background-color: #25D366;
     border-radius: 50%;
@@ -27,10 +27,12 @@ export const button = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-        display: none;
+        width: 60px;
+        height: 60px;
     }
 
     @media screen and (max-width: 600) {
-        display: none;
+        width: 60px;
+        height: 60px;
     }
 `
