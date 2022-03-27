@@ -71,9 +71,7 @@ export const Container = styled.div`
         justify-content: space-around;
 
         .logodiv {
-            width: 300px;
-            height: 300px;
-            transform: translate(50px,-200px);
+            display: none;
         }
 
     }
