@@ -2,7 +2,6 @@ import * as C from "./styles";
 import { pcb, sudati, eucatex } from "../../data/woods";
 
 import GlobalStyles from "../../styles/GlobalStyles";
-import { Header } from "../../components/Header";
 import { WhatsAppButton } from '../../components/WhatsAPP-Float-Button';
 
 function Products() {
@@ -40,7 +39,6 @@ function Products() {
   return (
     <C.Container>
       <WhatsAppButton />
-      <Header />
       <div className="prductsContent">
         <div id="line">
           <C.Bar>

@@ -1,7 +1,30 @@
 import * as C from "./styles";
 import MenuIcon from "@mui/icons-material/Menu";
+import { useAnimation } from "framer-motion";
 
 export const Header = () => {
+  const controls = useAnimation();
+  const pageURL = window.location.href;
+  let initialMenuState = {
+    transform: "translateY(-200px)",
+    opacity:0
+  }
+
+  const sequence = async() => {
+    await controls.start({y: -200,opacity:0});
+    return  controls.start({y:0,opacity:1});
+  }
+  console.log(pageURL);
+
+  if(pageURL === "http://localhost:3000/"){
+    sequence();
+  } else {
+    initialMenuState = {
+      transform: "translateY(0px)",
+      opacity:1
+    }
+  }
+
   function handleMenu() {
     const links = document.getElementById("links") as HTMLDivElement;
     if (links?.style.display === "block") {
@@ -10,24 +33,6 @@ export const Header = () => {
       links.style.display = "block";
     }
   }
-
-  //Animations
-
-  // const variants = {
-  //   start: {
-  //     y: -200,
-  //     opacity:0
-  //   },
-  //   end: {
-  //     y: 0,
-  //     opacity: 1,
-  //     transition: {
-  //       type: "spring",
-  //       duration: 1,
-  //       bouce: .3
-  //     }
-  //   }
-  // }
 
   function home() {
     window.location.href = "/";
@@ -62,9 +67,9 @@ export const Header = () => {
       <div className="menu">
         <C.AnimateButton
           id="home"
-          initial={{ y: -200, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          animate={controls}
           transition={{ type: "spring", duration: 1, bounce: 0.3, delay: 0.2 }}
+          initial={initialMenuState}
           onClick={home}
           value="INICIO"
         >
@@ -72,9 +77,9 @@ export const Header = () => {
         </C.AnimateButton>
         <C.AnimateButton
           id="products"
-          initial={{ y: -200, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          animate={controls}
           transition={{ type: "spring", duration: 1, bounce: 0.3, delay: 0.4 }}
+          initial={initialMenuState}
           onClick={products}
           value="PRODUTOS"
         >
@@ -82,9 +87,9 @@ export const Header = () => {
         </C.AnimateButton>
         <C.AnimateButton
           id="contact"
-          initial={{ y: -200, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          animate={controls}
           transition={{ type: "spring", duration: 1, bounce: 0.3, delay: 0.6 }}
+          initial={initialMenuState}
           onClick={contact}
           value="CONTATO"
         >
@@ -92,9 +97,9 @@ export const Header = () => {
         </C.AnimateButton>
         <C.AnimateButton
           id="about"
-          initial={{ y: -200, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          animate={controls}
           transition={{ type: "spring", duration: 1, bounce: 0.3, delay: 0.8 }}
+          initial={initialMenuState}
           onClick={about}
           value="SOBRE"
         >

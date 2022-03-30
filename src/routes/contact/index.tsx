@@ -1,6 +1,6 @@
 import InputMask from "react-input-mask";
 import * as C from "./styles";
-import { Header } from "../../components/Header";
+// import { Header } from "../../components/Header";
 import GlobalStyles from "../../styles/GlobalStyles";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -16,7 +16,7 @@ function Contact() {
 
   return (
     <C.Container>
-      <Header />
+      {/* <Header /> */}
       <div id="bar">
         <p>FALE CONOSCO</p>
       </div>
