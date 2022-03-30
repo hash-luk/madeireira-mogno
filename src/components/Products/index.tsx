@@ -41,7 +41,7 @@ export const Products = () => {
 
   return (
     <C.Container>
-      <h3>Amostras</h3>
+      <h2>Amostras</h2>
       <Carousel
         showThumbs={false}
         className="carousel"

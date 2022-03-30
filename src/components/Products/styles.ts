@@ -8,13 +8,13 @@ export const Container = styled.div`
     align-items: center;
     padding: 50px;
     margin: 0 auto;
+    /* background-color: #FFF; */
 
-    h3 {
-        /* display: none; */
+    h2 {
         font-weight: 700;
         color: #FFF;
         text-align: center;
-        display: none;
+        margin-bottom: 30px;
     }
 
     .carousel {

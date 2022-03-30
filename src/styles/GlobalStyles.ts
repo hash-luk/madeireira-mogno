@@ -18,4 +18,9 @@ export default createGlobalStyle`
         scroll-behavior: smooth;
         font-size: 16px;
     }
+
+    #ts-particles {
+        position: absolute;
+        z-index: -999;
+    }
 `

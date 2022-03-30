@@ -9,6 +9,8 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    background-color: rgba(255,255,255,0.7);
+    padding-bottom: 3px;
 
     .image {
         width: 200px;
@@ -20,7 +22,7 @@ export const Container = styled.div`
     }
 
     .image:hover {
-        transform: scale(1);
+        transform: scale(0.9);
         cursor: pointer;
     }
 
@@ -28,6 +30,10 @@ export const Container = styled.div`
         text-align: center;
         font-weight: 400;
         margin: 5px 0px;
+
+        p {
+            color: #000;
+        }
     }
 
     .text:last-child {

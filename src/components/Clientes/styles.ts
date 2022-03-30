@@ -10,8 +10,8 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 90px;
     margin: 0 auto;
+    margin-top: 60px;
 
     .carousel {
         width: 1300px;

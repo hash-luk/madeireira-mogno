@@ -24,16 +24,25 @@ export const Container = styled.div`
         align-items: center;
         justify-content: center;
         text-align: center;
+        gap: 30px;
     }
 
     #email {
-        width: 50%;
+        width: 49%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         color: #FFF;
+        padding: 15px 0px;
+        background-color: rgba(0,0,0,0.3);
+
+        #content__email {
+            width: 85%;
+            height: 80%;
+            /* background-color: rgba(0,0,0,0.7); */
+        }
 
         #fields {
             width: 100%;
@@ -65,18 +74,17 @@ export const Container = styled.div`
     }
 
     #map {
-        width: 50%;
-        height: 100%;
+        width: 49%;
+        height: 103%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         position: relative;
-        
 
         iframe {
             width: 100%;
-            height: 90%;
+            height: 100%;
             margin: 10px 0px;
             border: none;
         }
@@ -196,20 +204,6 @@ export const SendButton = styled.button`
         cursor: pointer;
         background-color: #62a619;
     }
-`
-
-export const Bar = styled.div`
-    width: 100%;
-    height: 70px;
-    background-color: #3f8c37;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    color: #FFF;
 `
 
 export const BuyButton = styled.button`

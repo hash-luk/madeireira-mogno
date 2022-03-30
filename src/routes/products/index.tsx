@@ -1,3 +1,5 @@
+import React from "react"
+import { Skeleton } from '@mui/material';
 import * as C from "./styles";
 import { pcb, sudati, eucatex } from "../../data/woods";
 
@@ -52,23 +54,35 @@ function Products() {
         </div>
         <div className="sudati">
           {sudati.map((product) => (
-            <C.ProductBox key={product.id}>
+            product ? (
+              <C.ProductBox key={product.id}>
               {product.name} <img src={product.image} alt="" />
             </C.ProductBox>
+            ) : (
+              <Skeleton variant="text" width={295} height={309.8} />
+            )
           ))}
         </div>
         <div className="eucatex">
           {eucatex.map((product) => (
-            <C.ProductBox key={product.id}>
+            product.image ? (
+              <C.ProductBox key={product.id}>
               {product.name} <img src={product.image} alt="" />
             </C.ProductBox>
+            ) : (
+              <Skeleton variant="text" width={295} height={309.8} />
+            )
           ))}
         </div>
         <div className="pcb">
           {pcb.map((product) => (
-            <C.ProductBox key={product.id}>
+            product ? (
+              <C.ProductBox key={product.id}>
               {product.name} <img src={product.image} alt="" />
             </C.ProductBox>
+            ) : (
+              <Skeleton variant="text" width={295} height={309.8} />
+            )
           ))}
         </div>
       </div>
