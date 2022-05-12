@@ -9,6 +9,8 @@ import EmailIcon from "@mui/icons-material/Email";
 import { TextArea } from "../TextArea";
 import { Input } from "../Input";
 
+import { theme } from "../../theme";
+
 export const Information = () => {
   const [open, setOpen] = useState(false);
   const [name, setName] = useState("");
@@ -26,11 +28,11 @@ export const Information = () => {
     left: "50%",
     transform: "translate(-50%, -50%)",
     width: 400,
-    bgcolor: "#364d39",
-    border: "2px solid #000",
+    bgcolor: theme.colors.lightGreen,
+    border: `1px solid ${theme.colors.borderColor}`,
     boxShadow: 24,
     p: 4,
-    color: "#FFF",
+    color: theme.colors.whiteTextColor,
   };
 
   function handleSubmit() {

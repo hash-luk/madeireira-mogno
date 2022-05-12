@@ -26,10 +26,6 @@ export const Container = styled.div`
         justify-content: center;
         text-align: center;
         gap: 30px;
-
-        tex-tarea {
-            resize: none;
-        }
     }
 
     #email {
@@ -39,14 +35,14 @@ export const Container = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        color: #FFF;
+        color: ${theme.colors.whiteTextColor};
         padding: 15px 0px;
-        background-color: rgba(0,0,0,0.3);
+        border-radius: 5px;
+        border: 1px solid ${theme.colors.borderColor};
 
         #content__email {
             width: 85%;
             height: 80%;
-            /* background-color: rgba(0,0,0,0.7); */
         }
 
         #fields {
@@ -72,13 +68,13 @@ export const Container = styled.div`
             width: 350px;
             height: 100%;
             border-radius: 5px;
-            border: 1px solid #adadad;
+            border: 1px solid ${theme.colors.borderColor};
             font-weight: 300;
             font-size: 12pt;
             padding: 5px 5px;
 
             :focus {
-                outline: 1px solid #fff;
+                outline: 1.5px solid ${theme.colors.superLightGreen};
             }
         }
 
@@ -222,20 +218,5 @@ export const SendButton = styled.button`
         transform: scale(1.05);
         background-color: ${theme.colors.superLightGreen};
         color: ${theme.colors.blackTextColor};
-    }
-`
-
-export const BuyButton = styled.button`
-    width: 150px;
-    height: 40px;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 14pt;
-    border: none;
-    background-color:#CBE86B ;
-    color: #1C140D;
-
-    :hover {
-        cursor: pointer;
     }
 `
