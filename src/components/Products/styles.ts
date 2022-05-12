@@ -1,18 +1,17 @@
 import styled from 'styled-components';
+import { theme } from '../../theme';
 
 
 export const Container = styled.div`
     width: 100%;
     height: 400px;
-
     align-items: center;
     padding: 50px;
     margin: 0 auto;
-    /* background-color: #FFF; */
 
     h2 {
         font-weight: 700;
-        color: #FFF;
+        color: ${theme.colors.white};
         text-align: center;
         margin-bottom: 30px;
     }

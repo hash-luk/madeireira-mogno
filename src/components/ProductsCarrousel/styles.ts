@@ -1,15 +1,14 @@
 import styled from "styled-components";
-
+import { theme } from "../../theme";
 
 export const Container = styled.div`
-
     width: 210px;
     height: 210px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(255,255,255,0.7);
+    background-color: ${theme.colors.white};
     padding-bottom: 3px;
 
     .image {
@@ -18,7 +17,7 @@ export const Container = styled.div`
         transform: scale(0.8);
         overflow: hidden;
         transition: all 0.2s ease-in-out;
-        box-shadow: 1px 1px 2px black;
+        box-shadow: 1px 1px 2px ${theme.colors.black};
     }
 
     .image:hover {
@@ -28,16 +27,17 @@ export const Container = styled.div`
 
     .text {
         text-align: center;
-        font-weight: 400;
+
         margin: 5px 0px;
 
         p {
-            color: #000;
+            color: ${theme.colors.blackTextColor};
+            font-weight: 500;
         }
     }
 
     .text:last-child {
         font-weight: 300;
-        color: #FFF;
+        color: ${theme.colors.whiteTextColor};
     }
 `

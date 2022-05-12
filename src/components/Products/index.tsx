@@ -8,6 +8,8 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import * as C from "./styles";
 
+import { theme } from "../../theme";
+
 export const Products = () => {
   let swidth = window.screen.width;
 
@@ -24,7 +26,7 @@ export const Products = () => {
     cursor: "pointer",
     background: "none",
     border: "none",
-    color: "#FFF",
+    color: theme.colors.white,
   };
 
   const productsComponents = products.map((product) => {
@@ -41,7 +43,7 @@ export const Products = () => {
 
   return (
     <C.Container>
-      <h2>Amostras</h2>
+      <h2>AMOSTRAS</h2>
       <Carousel
         showThumbs={false}
         className="carousel"
