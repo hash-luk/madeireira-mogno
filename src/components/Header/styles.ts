@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../theme";
 import { motion } from "framer-motion";
 
 export const Container = styled.div`
@@ -25,10 +26,10 @@ export const Container = styled.div`
       font-weight: 500;
     }
     div:first-child {
-      color: #77c91e;
+      color: ${theme.colors.lightGreen};
     }
     div:last-child {
-      color: #fff;
+      color: ${theme.colors.whiteTextColor};
     }
 
     :hover {
@@ -55,7 +56,7 @@ export const Container = styled.div`
       height: 33px;
       border-radius: 5px;
       background-color: #77c91e;
-      color: #fff;
+      color: ${theme.colors.whiteTextColor};
       border: none;
       font-weight: 500;
       font-size: 14pt;
@@ -64,7 +65,7 @@ export const Container = styled.div`
 
     button:hover {
       cursor: pointer;
-      background-color: #86de26;
+      background-color: ${theme.colors.lightGreen};
     }
   }
 
@@ -72,7 +73,7 @@ export const Container = styled.div`
     height: 100%;
     width: 100px;
     background-color: transparent;
-    color: #fff;
+    color: ${theme.colors.whiteTextColor};
     display: none;
     position: absolute;
     right: 0;
@@ -113,7 +114,7 @@ export const ALinks = styled(motion.a)`
   border-top: 1px solid #000;
   width: 100%;
   height: 50px;
-  background-color: #fdfdfd;
+  background-color: ${theme.colors.responsiveWhiteTextColor};
   text-align: center;
   font-weight: 400;
 
@@ -128,8 +129,8 @@ export const AnimateButton = styled(motion.button)`
   width: 137px;
   height: 33px;
   border-radius: 5px;
-  background-color: #77c91e;
-  color: #fff;
+  background-color: ${theme.colors.superLightGreen};
+  color: ${theme.colors.whiteTextColor};
   border: none;
   font-weight: 500;
   font-size: 14pt;
@@ -137,6 +138,6 @@ export const AnimateButton = styled(motion.button)`
 
   :hover {
     cursor: pointer;
-    background-color: #86de26;
+    background-color: ${theme.colors.lightGreen};
   }
 `;

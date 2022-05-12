@@ -5,5 +5,8 @@ export const theme = {
         blackTextColor: '#191A19',
         black:'#000',
         borderColor: '#adadad',
+        lightGreen: '#4E9F3D',
+        responsiveWhiteTextColor:'#fdfdfd',
+        superLightGreen:'#77c91e',
     },
 }
