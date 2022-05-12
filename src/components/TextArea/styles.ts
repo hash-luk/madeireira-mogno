@@ -11,7 +11,7 @@ export const TextArea = styled.textarea`
   padding: 5px 5px;
 
   :focus {
-    outline: 1px solid red;
+    outline: 1px solid #fff;
   }
 `;
 
