@@ -50,7 +50,7 @@ Para ver o projeto em ação pode se utilizar a vercel, onde não tive problemas
 
 ## Licença 📝
 
-[MIT]()
+[MIT](https://github.com/hash-luk/madeireira-mogno/blob/main/LICENSE)
 
 <br/>
 
