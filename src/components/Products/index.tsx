@@ -49,6 +49,7 @@ export const Products = () => {
         className="carousel"
         stopOnHover
         autoPlay
+        interval={4300}
         infiniteLoop={swidth <= 1024 ? false : true}
         showIndicators={swidth <= 1024 ? false : true}
         showStatus={false}

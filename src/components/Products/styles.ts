@@ -34,6 +34,7 @@ export const Container = styled.div`
 
     .next:hover, .prev:hover {
         cursor: pointer;
+        transform: scale(1.1);
     }
 
     .productStyle:hover {

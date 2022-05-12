@@ -7,6 +7,7 @@ import * as C from "./styles";
 import { opinions } from "../../data/opinions.json";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { theme } from "../../theme";
 
 export const Clientes = () => {
   let windowWidth = window.innerWidth;
@@ -27,7 +28,7 @@ export const Clientes = () => {
     cursor: "pointer",
     background: "none",
     border: "none",
-    color: "#FFF",
+    color: theme.colors.white,
   };
 
   return (
@@ -37,6 +38,7 @@ export const Clientes = () => {
         className="carousel"
         autoPlay
         infiniteLoop
+        interval={6000}
         showThumbs={false}
         showIndicators={windowWidth <= 768 ? false : true}
         showArrows={showControlsCondition}

@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import { theme } from '../../theme';
 
 export const Container = styled.div`
     width: 100%;
     height: 300px;
     text-align: center;
     font-weight: 500;
-    color: #FFF;
+    color: ${theme.colors.whiteTextColor};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,12 +17,19 @@ export const Container = styled.div`
     .carousel {
         width: 1300px;
         transition: all ease;
+
+        .prev,.next {
+            :hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
     }
 
     .opinions {
-        background-color: #FFA54F;
+        background-color: ${theme.colors.mediumYellow};
         width: 300px;
-        color: #fff;
+        color: ${theme.colors.whiteTextColor};
         width: 1000px;
         height: 190px;
         display: flex;
@@ -40,28 +48,29 @@ export const Container = styled.div`
         #line {
             width: 90%;
             height: 2px;
-            background-color: #2D4B0C;
+            background-color: ${theme.colors.lineColor};
         }
         
         p:first-child {
-            font-weight: 400;
+            font-weight: 700;
+            font-size: 1.1rem;
         }
 
         p:last-child {
-            font-weight: 300;
+            font-weight: 400;
             max-width: 90%;
+            font-size: 1rem;
         }
 
         .selectors {
             width: 90px;
             height: 30px;
-            border: 1px solid red;
         }
 
         #point {
             width: 40px;
             height: 40px;
-            background: #000;
+            background: ${theme.colors.black};
         }
 
         .opinion {

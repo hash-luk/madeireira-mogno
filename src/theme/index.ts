@@ -9,5 +9,7 @@ export const theme = {
         lightGreen: '#4E9F3D',
         responsiveWhiteTextColor:'#fdfdfd',
         superLightGreen:'#77c91e',
+        mediumYellow: '#FFA54F',
+        lineColor: '#2D4B0C'
     },
 }
