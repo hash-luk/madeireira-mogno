@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { theme } from "../theme";
 
 export default createGlobalStyle`
     * {
@@ -10,9 +11,10 @@ export default createGlobalStyle`
     }
 
     body {
-        background-color: #111d27;
+        background-color: ${theme.colors.bgColor};
         -webkit-font-smoothing: antialiased !important;
-    } 
+    }
+
 
     html {
         scroll-behavior: smooth;

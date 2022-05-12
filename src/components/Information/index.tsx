@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import InputMask from "react-input-mask";
 import emailjs from "emailjs-com";
 

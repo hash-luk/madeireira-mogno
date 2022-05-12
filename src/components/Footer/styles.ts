@@ -1,9 +1,11 @@
 import styled from 'styled-components';
+import { theme } from '../../theme';
 
 export const Container = styled.div`
     width: 100%;
-    height: 210px;
-    background-color: #152431;
+    height: 250px;
+    padding: 15px 0;
+    border-top: 1px solid ${theme.colors.borderColor};
 
     .info {
         width: 1300px;
@@ -122,6 +124,10 @@ export const Container = styled.div`
 
         #social {
             justify-content: space-around;
+
+            #icons {
+                margin-top: 20px;
+            }
         }
 
         #right {
@@ -144,6 +150,7 @@ export const Redes = styled.p`
     font-weight:500;
     font-size: 15pt;
     color: #1B676B;
+    height: 70%;
 
     @media(max-width:767px) {
         height: 40px;
