@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from '../../theme';
 
 export const Container = styled.div`
     width: 100%;
@@ -208,16 +209,19 @@ export const Container = styled.div`
 export const SendButton = styled.button`
     width: 150px;
     height: 50px;
-    background-color: #77C91E;
-    color: #FFF;
+    background-color: ${theme.colors.lightGreen};
+    color: ${theme.colors.whiteTextColor};
     box-shadow: none;
     border: none;
     font-weight: 400;
-    font-size: 13pt;
+    font-size: 14pt;
+    letter-spacing:0.2rem;
     
     :hover {
         cursor: pointer;
-        background-color: #62a619;
+        transform: scale(1.05);
+        background-color: ${theme.colors.superLightGreen};
+        color: ${theme.colors.blackTextColor};
     }
 `
 
