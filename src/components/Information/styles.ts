@@ -25,6 +25,10 @@ export const Container = styled.div`
         justify-content: center;
         text-align: center;
         gap: 30px;
+
+        tex-tarea {
+            resize: none;
+        }
     }
 
     #email {
@@ -70,6 +74,10 @@ export const Container = styled.div`
             border: 1px solid #adadad;
             font-weight: 300;
             font-size: 12pt;
+        }
+
+        textarea {
+            resize: none;
         }
     }
 

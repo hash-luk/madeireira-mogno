@@ -7,7 +7,6 @@ function App() {
   return (
     <div id="container">
       <Header />
-
       <GlobalStyles />
     </div>
   );
