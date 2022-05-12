@@ -7,6 +7,7 @@ import * as C from "./styles";
 import EmailIcon from '@mui/icons-material/Email';
 
 import { TextArea } from "../TextArea";
+import {Input} from "../Input";
 
 
 export const Information = () => {
@@ -92,24 +93,10 @@ export const Information = () => {
           <h2>Fale Conosco <EmailIcon /></h2>
           <div id="fields">
             <div id="field">
-              <label htmlFor="nome">Nome</label>
-              <input
-                type="text"
-                name="nome"
-                onChange={(e) => setName(e.target.value)}
-                id="nameField"
-                placeholder="Digite seu nome"
-              />
+              <Input id="nameField" placeHolder="Digite seu nome" type="text" name="Nome"/>
             </div>
             <div id="field">
-              <label htmlFor="email">Email</label>
-              <input
-                type="text"
-                name="email"
-                onChange={(e) => setEmail(e.target.value)}
-                className="emailField"
-                placeholder="Digite seu email"
-              />
+              <Input placeHolder="Digite seu email" type="text" name="Email" className="emailField"/>
             </div>
             <div id="field">
               <label htmlFor="telefone">Telefone</label>
