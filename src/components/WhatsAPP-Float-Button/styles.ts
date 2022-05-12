@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../theme";
 
 
 export const button = styled.div`
@@ -8,22 +9,23 @@ export const button = styled.div`
     bottom: 30px;
     width: 50px;
     height: 50px;
-    background-color: #25D366;
+    background-color: ${theme.colors.superLightGreen};
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 
     :hover {
-        background-color: #075E54;
+        background-color: ${theme.colors.lightGreen};
     }
 
     .icon {
         margin-top: 3px;
         width: 100%;
         height: 100%;
-        color: #fff;
+        color: ${theme.colors.whiteTextColor};
     }
 
     @media screen and (max-width: 768px) {

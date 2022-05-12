@@ -212,6 +212,7 @@ export const SendButton = styled.button`
     font-weight: 400;
     font-size: 14pt;
     letter-spacing:0.2rem;
+    transition: all .3s ease;
     
     :hover {
         cursor: pointer;
