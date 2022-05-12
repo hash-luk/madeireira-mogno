@@ -35,25 +35,28 @@ export const Container = styled.div`
             justify-content: space-evenly;
 
             a {
-                text-decoration: none;
-                color: #519548;
+                text-decoration: underline;
+                text-underline-offset: 2px;
+                color: ${theme.colors.whiteTextColor};
 
                 :hover {
-                    color: #88C425;
+                    color: ${theme.colors.lightGreen};
                 }
             }
 
             p {
-                color: #FFF;
+                color: ${theme.colors.whiteTextColor};
             }
         }
 
         #social {
             width: 100%;
+            height: 20%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            gap: 5px;
         }
 
         #icons {
@@ -61,16 +64,19 @@ export const Container = styled.div`
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 1.5rem;
         }
     }
 
     .icon {
-        width: 40px;
-        height: 40px;
-        color: #FFF;
+        width: 25px;
+        height: 25px;
+        color: ${theme.colors.whiteTextColor};
+
         :hover{
             cursor: pointer;
+            color: ${theme.colors.lightGreen};
         }
     }
 
@@ -144,15 +150,4 @@ export const Paragraph = styled.p`
     font-weight: 300;
     font-size: 14pt;
     color: #FFF;
-`
-
-export const Redes = styled.p`
-    font-weight:500;
-    font-size: 15pt;
-    color: #1B676B;
-    height: 70%;
-
-    @media(max-width:767px) {
-        height: 40px;
-    }
 `
