@@ -1,7 +1,7 @@
 import { useState } from "react";
 import * as C from "./styles";
 import bg from "../../assets/bg/bg-main.jpg";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export const Apresentation = () => {
@@ -83,7 +83,7 @@ export const Apresentation = () => {
         <div id="terms">
           <C.CheckBox required id="requiredCheckbox" className="privacy"/>
           <C.Terms>
-            ACEITO A
+            ACEITO A <span style={{marginRight:'0.95%'}}></span>
             <b>
               <a href="/">POLÍTICA DE PRIVACIDADE</a>
             </b>

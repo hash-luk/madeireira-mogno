@@ -15,8 +15,10 @@ export const Container = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: fit-content;
     height: 100%;
+    user-select: none;
+
     div {
       font-size: 60pt;
       text-align: center;
@@ -27,6 +29,10 @@ export const Container = styled.div`
     }
     div:last-child {
       color: #fff;
+    }
+
+    :hover {
+      cursor: pointer;
     }
   }
 

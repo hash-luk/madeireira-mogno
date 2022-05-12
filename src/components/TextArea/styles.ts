@@ -9,6 +9,7 @@ export const TextArea = styled.textarea`
   font-size: 12pt;
   resize: none;
   padding: 5px 5px;
+  margin-bottom:2px;
 
   :focus {
     outline: 1px solid #fff;

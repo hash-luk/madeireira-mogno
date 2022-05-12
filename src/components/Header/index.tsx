@@ -52,7 +52,7 @@ export const Header = () => {
 
   return (
     <C.Container>
-      <div className="logo">
+      <div className="logo" onClick={home}>
         <div>M</div>
         <div>M</div>
       </div>
