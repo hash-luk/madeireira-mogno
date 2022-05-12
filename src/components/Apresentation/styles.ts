@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from '../../theme';
 
 export const Container = styled.div`
     width: 100%;
@@ -13,7 +14,7 @@ export const Container = styled.div`
     .filter{
         width: 100%;
         height: 100%;
-        background-color: #000;
+        background-color: ${theme.colors.black};
         position: absolute;
         opacity: 0.5;
     }
@@ -113,7 +114,7 @@ export const Container = styled.div`
 export const FormGroup = styled.div`
     width: 263px;
     height: 478px;
-    background-color: #FFF;
+    background-color: ${theme.colors.white};
     position: absolute;
     z-index: 2;
     display: flex;
@@ -121,7 +122,7 @@ export const FormGroup = styled.div`
     align-items: center;
     justify-content: space-evenly;
     margin: 250px 0px 0px 300px;
-    box-shadow: 1px 1px 1px ;
+    box-shadow: 1px 1px 1px ${theme.colors.black};
 
 
     @media screen and (max-width: 1024px) {
@@ -156,7 +157,7 @@ export const FormGroup = styled.div`
 `
 
 export const Title = styled.p`
-    color: #77C91E;
+    color: ${theme.colors.blackTextColor};
     font-weight: 700;
     font-size: 14pt;
     text-align: center;
@@ -168,7 +169,7 @@ export const Title = styled.p`
 
 export const Label = styled.label`
     font-weight: 400;
-    color: #989797;
+    color: ${theme.colors.responsiveWhiteTextColor};
     opacity: 0.8;
     pointer-events: none;
     padding: 0 5px;
@@ -176,12 +177,12 @@ export const Label = styled.label`
 `
 
 export const CheckBox = styled.input.attrs({type:'checkbox'})`
-    border: 1px solid #000;
+    border: 1px solid ${theme.colors.black};
 `
 
 export const Terms = styled.label`
     font-weight: 300;
-    color: #000;
+    color: ${theme.colors.blackTextColor};
     font-size: 10pt;
     margin-left: 0.5em;
     white-space: nowrap;
@@ -202,17 +203,19 @@ export const Terms = styled.label`
 export const Request = styled.button`
     width: 229px;
     height: 40px;
-    background-color: #77C91E;
-    color: #FFF;
-    box-shadow: 1px 1px 1px #001;
+    background-color: ${theme.colors.lightGreen};
+    color: ${theme.colors.whiteTextColor};
+    box-shadow: 1px 1px 1px ${theme.colors.black};
     border: none;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease;
     font-weight: 400;
     font-size: 14pt;
 
     :hover {
         cursor: pointer;
         transform: scale(1.05);
+        background-color: ${theme.colors.superLightGreen};
+        color: ${theme.colors.blackTextColor};
     }
 
     @media(max-width: 480px){
@@ -224,7 +227,7 @@ export const Input = styled.input.attrs({type:'text'})`
     width: 100%;
     height: 30px;
     border: none;
-    border-bottom:1px solid #9c9c9c;
+    border-bottom:1px solid ${theme.colors.blackTextColor};
     -webkit-appearance: none;
     outline: none;
     transition: all .2s ease;
@@ -234,6 +237,6 @@ export const Input = styled.input.attrs({type:'text'})`
     :focus {
         border: none;
         outline: none;
-        border-bottom: 2px solid #000;
+        border-bottom: 2px solid ${theme.colors.black};
     }
 `
