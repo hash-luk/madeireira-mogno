@@ -67,18 +67,25 @@ export const Container = styled.div`
             padding: 0 15px;
         }
 
-        #field input, textarea{
+        #field input{
             width: 350px;
             height: 100%;
             border-radius: 5px;
             border: 1px solid #adadad;
             font-weight: 300;
             font-size: 12pt;
+            padding: 5px 5px;
+
+            :focus {
+                outline: 1px solid red;
+            }
         }
 
-        textarea {
-            resize: none;
+        .textarea {
+            position: relative;
+            height: 120px !important;
         }
+
     }
 
     #map {

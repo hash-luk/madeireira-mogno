@@ -1,9 +1,13 @@
 import { useState } from "react";
-import {Modal,Typography,Box} from "@material-ui/core";
 import InputMask from "react-input-mask";
 import emailjs from "emailjs-com";
+
+import {Modal,Typography,Box} from "@material-ui/core";
 import * as C from "./styles";
 import EmailIcon from '@mui/icons-material/Email';
+
+import { TextArea } from "../TextArea";
+
 
 export const Information = () => {
   const [open, setOpen] = useState(false);
@@ -94,6 +98,7 @@ export const Information = () => {
                 name="nome"
                 onChange={(e) => setName(e.target.value)}
                 id="nameField"
+                placeholder="Digite seu nome"
               />
             </div>
             <div id="field">
@@ -103,6 +108,7 @@ export const Information = () => {
                 name="email"
                 onChange={(e) => setEmail(e.target.value)}
                 className="emailField"
+                placeholder="Digite seu email"
               />
             </div>
             <div id="field">
@@ -113,16 +119,11 @@ export const Information = () => {
                 name="telephone"
                 className="telephoneField"
                 alwaysShowMask = {false}
+                placeholder="(99) 9 9999-9999"
               />
             </div>
-            <div id="field">
-              <label htmlFor="mensagem">Mensagem</label>
-              <textarea
-                name="mensagem"
-                id="message"
-                onChange={(e) => setMessage(e.target.value)}
-                className="messageField"
-              ></textarea>
+            <div id="field" className="textarea">
+              <TextArea />
             </div>
           </div>
           <C.SendButton type="submit" onClick={handleSubmit}>
