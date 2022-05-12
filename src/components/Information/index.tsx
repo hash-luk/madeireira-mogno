@@ -1,14 +1,14 @@
 import { useState } from "react";
-import InputMask from "react-input-mask";
-import emailjs from "emailjs-com";
 
-import { Modal, Typography, Box } from "@material-ui/core";
 import * as C from "./styles";
 import EmailIcon from "@mui/icons-material/Email";
 
+import InputMask from "react-input-mask";
+import emailjs from "emailjs-com";
+import { Modal, Typography, Box } from "@material-ui/core";
+
 import { TextArea } from "../TextArea";
 import { Input } from "../Input";
-
 import { theme } from "../../theme";
 
 export const Information = () => {

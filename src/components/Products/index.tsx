@@ -1,13 +1,13 @@
+import * as C from "./styles";
 import { Carousel } from "react-responsive-carousel";
-import { Product } from "../ProductsCarrousel";
-import { CSSProperties } from "@material-ui/styles";
-import { products } from "../../data/products";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { CSSProperties } from "@material-ui/styles";
 
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import * as C from "./styles";
 
+import { Product } from "../ProductsCarrousel";
+import { products } from "../../data/products";
 import { theme } from "../../theme";
 
 export const Products = () => {

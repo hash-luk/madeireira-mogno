@@ -1,13 +1,14 @@
-import { Carousel } from "react-responsive-carousel";
 import { CSSProperties } from "styled-components";
-import { Opinion } from "./opinionElement";
+import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import * as C from "./styles";
-import { opinions } from "../../data/opinions";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+
 import { theme } from "../../theme";
+import { Opinion } from "./opinionElement";
+import { opinions } from "../../data/opinions";
 
 export const Clientes = () => {
   let windowWidth = window.innerWidth;

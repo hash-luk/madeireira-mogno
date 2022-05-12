@@ -1,6 +1,7 @@
 import * as C from "./styles";
-import MenuIcon from "@mui/icons-material/Menu";
 import { useAnimation } from "framer-motion";
+import MenuIcon from "@mui/icons-material/Menu";
+
 
 export const Header = () => {
   const controls = useAnimation();

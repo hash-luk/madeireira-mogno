@@ -1,4 +1,4 @@
-import * as C from './styles'
+import * as S from './styles'
 import WhatsAppIcon  from '@mui/icons-material/WhatsApp';
 
 export const WhatsAppButton = () =>  {
@@ -10,9 +10,9 @@ export const WhatsAppButton = () =>  {
 
     return(
         <>
-            <C.button onClick={handleWhatsApp}>
+            <S.button onClick={handleWhatsApp}>
                 < WhatsAppIcon className='icon'/>
-            </C.button>
+            </S.button>
         </>
     );
 }

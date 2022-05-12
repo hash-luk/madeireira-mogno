@@ -1,4 +1,4 @@
-import * as C from "./styles";
+import * as S from "./styles";
 
 type ProductProps = {
   id?: number,
@@ -9,13 +9,13 @@ type ProductProps = {
 
 export const Product = (produto:ProductProps) => {
   return (
-    <C.Container>
+    <S.Container>
       <div className="image">
         <img src={produto.imageURL} alt={produto.altText} />
       </div>
       <div className="text">
         <p>{produto.name}</p>
       </div>
-    </C.Container>
+    </S.Container>
   );
 };

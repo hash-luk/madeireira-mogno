@@ -1,5 +1,6 @@
 import { useState } from "react";
 import * as C from "./styles";
+
 import bg from "../../assets/bg/bg-main.jpg";
 import logo from "../../assets/logo.svg";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
