@@ -2,10 +2,15 @@ import { useState } from "react";
 
 import * as S from "./styles";
 
-export function TextArea() {
+interface TextAreaProps {
+  setVariableValue: (value: string) => void;
+  message: string;
+  className?: string;
+}
+
+export function TextArea({ setVariableValue,message,className }: TextAreaProps) {
     const maxCharacters = 200;
 
-  const [message, setMessage] = useState("");
   const [caracters, setCaracters] = useState(0);
 
   const handleCaracters = () => {
@@ -18,9 +23,10 @@ export function TextArea() {
       <S.TextArea
         name="message"
         placeholder="Escreva sua mensagem..."
-        onChange={(e) => setMessage(e.target.value)}
+        onChange={(e) => setVariableValue(e.target.value)}
         maxLength={maxCharacters}
         onKeyUp={handleCaracters}
+        className={className}
       />
       <S.Counter>{`${caracters}/${maxCharacters}`}</S.Counter>
     </>
