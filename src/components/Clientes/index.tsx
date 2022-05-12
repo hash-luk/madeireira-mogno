@@ -4,7 +4,7 @@ import { Opinion } from "./opinionElement";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import * as C from "./styles";
-import { opinions } from "../../data/opinions.json";
+import { opinions } from "../../data/opinions";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { theme } from "../../theme";
