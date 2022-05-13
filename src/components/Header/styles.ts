@@ -130,14 +130,22 @@ export const AnimateButton = styled(motion.button)`
   height: 33px;
   border-radius: 5px;
   background-color: ${theme.colors.superLightGreen};
-  color: ${theme.colors.whiteTextColor};
+
   border: none;
-  font-weight: 500;
-  font-size: 14pt;
-  text-shadow: 0.5px 0.5px 0.5px #000;
 
   :hover {
     cursor: pointer;
     background-color: ${theme.colors.lightGreen};
+  }
+
+  a {
+    color: ${theme.colors.whiteTextColor};
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14pt;
+    text-shadow: 0.5px 0.5px 0.5px #000;
+    :visited {
+      color: ${theme.colors.whiteTextColor};
+    }
   }
 `;

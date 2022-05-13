@@ -1,31 +1,9 @@
 import * as C from "./styles";
-import { useAnimation } from "framer-motion";
 import MenuIcon from "@mui/icons-material/Menu";
 
+import { Link } from "react-router-dom";
 
 export const Header = () => {
-  const controls = useAnimation();
-  const pageURL = window.location.href;
-  let initialMenuState = {
-    transform: "translateY(-200px)",
-    opacity:0
-  }
-
-  const sequence = async() => {
-    await controls.start({y: -200,opacity:0});
-    return  controls.start({y:0,opacity:1});
-  }
-  console.log(pageURL);
-
-  if(pageURL === "http://localhost:3000/"){
-    sequence();
-  } else {
-    initialMenuState = {
-      transform: "translateY(0px)",
-      opacity:1
-    }
-  }
-
   function handleMenu() {
     const links = document.getElementById("links") as HTMLDivElement;
     if (links?.style.display === "block") {
@@ -35,76 +13,72 @@ export const Header = () => {
     }
   }
 
-  function home() {
-    window.location.href = "/";
-  }
-
-  function products() {
-    window.location.href = "/produtos";
-  }
-
-  function about() {
-    window.location.href = "/sobre";
-  }
-
-  function contact() {
-    window.location.href = "/contato";
-  }
+  const variants = {
+    init: {
+      opacity: 0,
+      y: -200,
+    },
+    onScreen: {
+      opacity: 1,
+      y: 0,
+    },
+  };
 
   return (
     <C.Container>
-      <div className="logo" onClick={home}>
+      <div className="logo">
         <div>M</div>
         <div>M</div>
       </div>
       <div id="links">
         <div>
-          <C.ALinks onClick={home}>INICIO</C.ALinks>
-          <C.ALinks onClick={products}>PRODUTOS</C.ALinks>
-          <C.ALinks onClick={contact}>CONTATO</C.ALinks>
-          <C.ALinks onClick={about}>SOBRE</C.ALinks>
+          <C.ALinks>INICIO</C.ALinks>
+          <C.ALinks>PRODUTOS</C.ALinks>
+          <C.ALinks>CONTATO</C.ALinks>
+          <C.ALinks>SOBRE</C.ALinks>
         </div>
       </div>
       <div className="menu">
         <C.AnimateButton
           id="home"
-          animate={controls}
+          variants={variants}
+          animate={"onScreen"}
           transition={{ type: "spring", duration: 1, bounce: 0.3, delay: 0.2 }}
-          initial={initialMenuState}
-          onClick={home}
+          initial={"init"}
           value="INICIO"
         >
-          INICIO
+          <Link to="/">INICIO</Link>
         </C.AnimateButton>
+
         <C.AnimateButton
           id="products"
-          animate={controls}
+          variants={variants}
+          animate={"onScreen"}
           transition={{ type: "spring", duration: 1, bounce: 0.3, delay: 0.4 }}
-          initial={initialMenuState}
-          onClick={products}
+          initial={"init"}
           value="PRODUTOS"
         >
-          PRODUTOS
+          <Link to="produtos">PRODUTOS</Link>
         </C.AnimateButton>
         <C.AnimateButton
           id="contact"
-          animate={controls}
+          variants={variants}
+          animate={"onScreen"}
           transition={{ type: "spring", duration: 1, bounce: 0.3, delay: 0.6 }}
-          initial={initialMenuState}
-          onClick={contact}
+          initial={"init"}
           value="CONTATO"
         >
-          CONTATO
+          <Link to="contato">CONTATO</Link>
         </C.AnimateButton>
         <C.AnimateButton
           id="about"
-          animate={controls}
+          variants={variants}
+          animate={"onScreen"}
           transition={{ type: "spring", duration: 1, bounce: 0.3, delay: 0.8 }}
-          initial={initialMenuState}
-          onClick={about}
+          initial={"init"}
           value="SOBRE"
         >
-          SOBRE
+          <Link to="sobre">SOBRE</Link>
         </C.AnimateButton>
       </div>
       <button className="icon" onClick={handleMenu}>

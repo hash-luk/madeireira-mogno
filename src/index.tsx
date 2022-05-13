@@ -6,12 +6,14 @@ import Home from "./routes/home";
 import Products from "./routes/products";
 import Contact from "./routes/contact";
 import About from "./routes/about";
+import { Header } from './components/Header/index';
 
 ReactDOM.render(
   <>
     <div className="App">
       <App />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/produtos" element={<Products />} />
