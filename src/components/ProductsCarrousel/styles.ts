@@ -22,7 +22,6 @@ export const Container = styled.div`
 
     .image:hover {
         transform: scale(0.9);
-        cursor: pointer;
     }
 
     .text {
