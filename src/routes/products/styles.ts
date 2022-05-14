@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../theme";
 
 export const Container = styled.div`
   .prductsContent {
@@ -21,8 +22,6 @@ export const Container = styled.div`
     display: flex;
   }
 
-  @media screen and (max-width: 600px) {
-  }
 `;
 
 export const Bar = styled.div`
@@ -31,13 +30,13 @@ export const Bar = styled.div`
   transform: translateY(90px);
   max-width: 1300px;
   height: 40px;
-  background-color: #79bd9a;
+  background-color: ${theme.colors.lightGreen};
   padding-left: 5px;
   display: flex;
   align-items: center;
 
   h2 {
-    color: #000;
+    color: ${theme.colors.whiteTextColor};
     text-align: left;
   }
 
@@ -51,13 +50,18 @@ export const Button = styled.button`
   height: 2.5rem;
   width: 8rem;
   text-align: center;
-  color: #fff;
+  color: ${theme.colors.whiteTextColor};
   border: none;
-  font-weight: 700;
+  font-weight: 500;
+  text-shadow: 1px 1.5px 1px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  background-color: #77c91e;
+  background-color: ${theme.colors.superLightGreen};
 
-  ::selection {
-    background-color: red;
+  :hover {
+    background-color: ${theme.colors.lightGreen};
+  }
+
+  .selected {
+    
   }
 `;

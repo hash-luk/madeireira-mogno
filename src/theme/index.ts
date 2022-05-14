@@ -10,6 +10,7 @@ export const theme = {
         responsiveWhiteTextColor:'#fdfdfd',
         superLightGreen:'#77c91e',
         mediumYellow: '#FFA54F',
-        lineColor: '#2D4B0C'
+        lineColor: '#2D4B0C',
+        pear: '#85B73E',
     },
 }
