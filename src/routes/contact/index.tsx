@@ -1,6 +1,5 @@
 import InputMask from "react-input-mask";
-import * as C from "./styles";
-// import { Header } from "../../components/Header";
+import * as S from "./styles";
 import GlobalStyles from "../../styles/GlobalStyles";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -15,21 +14,20 @@ function Contact() {
   }
 
   return (
-    <C.Container>
-      {/* <Header /> */}
-      <div id="bar">
-        <p>FALE CONOSCO</p>
-      </div>
+    <S.Container>
+      <S.Bar>
+        <h2>FALE CONOSCO</h2>
+      </S.Bar>
       <div id="data">
-        <C.Form>
+        <S.Form>
           <div id="fields">
             <div id="field">
               <label htmlFor="name">NOME</label>
-              <C.Input name="name" id="name" />
+              <S.Input name="name" id="name" />
             </div>
             <div id="field">
               <label htmlFor="telephone">EMAIL</label>
-              <C.Input name="email" id="email" />
+              <S.Input name="email" id="email" />
             </div>
             <div id="field">
               <label htmlFor="telephone">TELEFONE</label>
@@ -37,11 +35,11 @@ function Contact() {
             </div>
             <div id="field">
               <label htmlFor="name">MENSSAGEM</label>
-              <C.MessageBox rows={5}></C.MessageBox>
+              <S.MessageBox rows={5}></S.MessageBox>
             </div>
-            <C.Button>Enviar</C.Button>
+            <S.Button>Enviar</S.Button>
           </div>
-        </C.Form>
+        </S.Form>
       </div>
       <div id="contacts">
         <h2>
@@ -76,9 +74,8 @@ function Contact() {
           ></iframe>
         </div>
       </div>
-
       <GlobalStyles />
-    </C.Container>
+    </S.Container>
   );
 }
 

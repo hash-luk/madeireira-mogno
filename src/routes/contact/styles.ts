@@ -1,149 +1,161 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import { theme } from "../../theme";
 
 export const Container = styled.div`
+  width: 100%;
+  height: 100vh;
+
+  #data {
+    height: 525px;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    box-shadow: 1px 1px 1px ${theme.colors.black};
+    margin: 0 auto;
+    margin-top: 100px;
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
+  }
+
+  #maps {
+    text-align: center;
+    color: ${theme.colors.white};
+    margin-top: 30px;
     width: 100%;
     height: 100vh;
+    padding: 0px 15px;
 
-    #bar {
-        width: 100%;
-        height: 100px;
-        color: #FFF;
-        font-weight: 500;
-        font-size: 18pt;
-        background-color: #83AF9B;
-        text-align: center;
-        padding-top: 33px;
+    .map {
+      width: 100%;
+      height: 500px;
+      margin-top: 7px;
+    }
+  }
 
-        p {
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
-        }
+  #contacts {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    margin: 0 auto;
+    color: ${theme.colors.white};
+    width: 100%;
+    height: 180px;
+  }
+
+  #channels {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 15px;
+
+    p {
+      font-size: 14pt;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      gap: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease-in;
     }
 
-    #data {
-        height: 525px;
-        width: 500px;
-        padding: 10px;
-        border: 1px solid rgba(0,0,0,0.7);
-        box-shadow: 1px 1px 1px #000;
-        margin: 0 auto;
-        margin-top: 70px;
-
-        @media screen and (max-width: 480px) {
-            width: 100%;
-        }
+    p:hover {
+      transform: scale(1.05);
     }
+  }
+`;
 
-    #maps {
-        text-align: center;
-        color: #FFF;
-        margin-top:30px;
-        width: 100%;
-        height: 100vh;
-        padding: 0px 15px;
+export const Bar = styled.div`
+  position: relative;
+  margin: 0 auto;
+  transform: translateY(90px);
+  max-width: 1300px;
+  height: 40px;
+  background-color: ${theme.colors.lightGreen};
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
 
-        .map {
-            width: 100%;
-            height: 500px;
-            margin-top: 7px;
-        }
-    }
+  h2 {
+    color: ${theme.colors.whiteTextColor};
+    text-align: left;
+  }
 
-    #contacts {
-        display: block;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-
-        margin: 0 auto;
-        color: #FFF;
-        width: 100%;
-        height: 180px;
-    }
-
-    #channels {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        justify-content: center;
-        gap: 15px;
-
-        p {
-            font-size: 14pt;
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            gap: 10px;
-            cursor: pointer;
-            transition: all .2s ease-in;
-        }
-
-        p:hover {
-            transform: scale(1.05);
-        }
-    }
-`
+  @media screen and (max-width: 600px) {
+    text-align: center !important;
+  }
+`;
 
 export const Form = styled.form`
-
-    #fields {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        font-weight: 300;
-
-        #field {
-            width: 100%;
-            
-            label {
-                font-size: 11pt;
-            }
-
-            input {
-                width: 100%;
-                height: 30px;
-                background-color: #e0e0e0;
-                border: 1px solid rgba(0,0,0,0.6);
-            }
-        }
-    }
-
-    background-color: white;
+  #fields {
+    height: 100%;
     width: 100%;
-    height: 500px;
-    padding: 5px;
-`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    font-weight: 300;
+    padding: 0 5px;
+
+    #field {
+      width: 100%;
+
+      label {
+        font-size: 11pt;
+        font-weight: 400;
+      }
+
+      input {
+        width: 100%;
+        height: 30px;
+        background-color: ${theme.colors.chineseWhite};
+        border: 1px solid rgba(0, 0, 0, 0.6);
+        padding: 0 5px;
+      }
+    }
+  }
+
+  background-color: ${theme.colors.white};
+  width: 100%;
+  height: 500px;
+  padding: 5px;
+`;
 
 export const Input = styled.input`
-    width: 100%;
-    height: 30px;
-`
+  width: 100%;
+  height: 30px;
+`;
 
 export const MessageBox = styled.textarea`
-    width: 100%;
-    height: 100%;
-    background-color: #e0e0e0;
-    resize: none;
-`
+  width: 100%;
+  height: 100%;
+  background-color: ${theme.colors.chineseWhite};
+  resize: none;
+  padding: 0 5px;
+`;
 
 export const Button = styled.button`
-    width: 100%;
-    height: 50px;
-    color: #FFF;
-    font-weight: 300;
-    font-size: 12pt;
-    border: none;
-    background-color: #036564;
-    transition: all ease .1s;
+  width: 100%;
+  height: 50px;
+  color: ${theme.colors.white};
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12pt;
+  border: none;
+  background-color: ${theme.colors.superLightGreen};
+  transition: all ease 0.1s;
 
-    :hover {
-        background-color: #033649;
-        cursor: pointer;
-        border: 1px solid rgba(0,0,0,0.5);
-        box-shadow: 1px 1px 1px rgba(0,0,0,0.8);
-    }
-`
+  :hover {
+    background-color: ${theme.colors.lightGreen};
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  }
+`;

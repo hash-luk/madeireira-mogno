@@ -11,6 +11,7 @@ export const theme = {
         superLightGreen:'#77c91e',
         mediumYellow: '#FFA54F',
         lineColor: '#2D4B0C',
+        chineseWhite: '#E0E0DE',
         pear: '#85B73E',
     },
 }
