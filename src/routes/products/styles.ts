@@ -17,6 +17,10 @@ export const Container = styled.div`
     gap: 1rem;
   }
 
+  .show {
+    display: flex;
+  }
+
   @media screen and (max-width: 600px) {
   }
 `;

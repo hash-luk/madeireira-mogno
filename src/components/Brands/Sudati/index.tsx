@@ -1,16 +1,17 @@
 import { brands } from "../../../data/brands";
-import * as S from "../styles";
+import * as S from "./styles";
 
 export function Sudati() {
   return (
-    <div className="sudati">
+    <S.Container className="sudati show">
       {brands.sudati.map((product) => {
         return (
           <S.ProductBox key={product.id}>
+            {product.name}
             <img src={product.image} alt={product.name} />
           </S.ProductBox>
         );
       })}
-    </div>
+    </S.Container>
   );
 }

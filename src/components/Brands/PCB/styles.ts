@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  .eucatex {
     margin: 50px auto;
     max-width: 1300px;
+    height: fit-content;
     display: none;
     flex-direction: row;
     flex-wrap: wrap;
@@ -11,32 +11,8 @@ export const Container = styled.div`
     justify-content: center;
     gap: 8px;
     transition: all 0.2s ease-in-out;
-  }
-
-  .sudati {
-    margin: 50px auto;
-    max-width: 1300px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .pcb {
-    margin: 50px auto;
-    max-width: 1300px;
-    display: none;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    transition: all 0.2s ease-in-out;
-  }
 `;
+
 
 export const ProductBox = styled.div`
   background-color: #79bd9a;
