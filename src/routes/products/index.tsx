@@ -9,30 +9,34 @@ import GlobalStyles from "../../styles/GlobalStyles";
 import { WhatsAppButton } from "../../components/WhatsAPP-Float-Button";
 
 function Products() {
-  const $eucatex = document.querySelector(".eucatex");
-  const $sudati = document.querySelector(".sudati");
-  const $pcb = document.querySelector(".pcb");
-
   function displayEucatex() {
-    $eucatex?.classList.add("show");
-    $sudati?.classList.remove("show");
-    $pcb?.classList.remove("show");
+    const $eucatex = document.querySelector(".eucatex") as HTMLDivElement;
+    const $sudati = document.querySelector(".sudati") as HTMLDivElement;
+    const $pcb = document.querySelector(".pcb") as HTMLDivElement;
 
-    console.log("Entrei aqui")
+    $eucatex.classList.add("show");
+    $sudati.classList.remove("show");
+    $pcb.classList.remove("show");
   }
 
   function displaySudati() {
-    $eucatex?.classList.remove("show");
-    $sudati?.classList.add("show");
-    $pcb?.classList.remove("show");
-    console.log("Entrei aqui")
+    const $eucatex = document.querySelector(".eucatex") as HTMLDivElement;
+    const $sudati = document.querySelector(".sudati") as HTMLDivElement;
+    const $pcb = document.querySelector(".pcb") as HTMLDivElement;
+
+    $eucatex.classList.remove("show");
+    $sudati.classList.add("show");
+    $pcb.classList.remove("show");
   }
 
   function displayPCB() {
-    $eucatex?.classList.remove("show");
-    $sudati?.classList.remove("show");
-    $pcb?.classList.add("show");
-    console.log("Entrei aqui")
+    const $eucatex = document.querySelector(".eucatex") as HTMLDivElement;
+    const $sudati = document.querySelector(".sudati") as HTMLDivElement;
+    const $pcb = document.querySelector(".pcb") as HTMLDivElement;
+
+    $eucatex.classList.remove("show");
+    $sudati.classList.remove("show");
+    $pcb.classList.add("show");
   }
 
   return (
