@@ -22,6 +22,9 @@ export const Container = styled.div`
     display: flex;
   }
 
+  .selected {
+    outline: 1px solid ${theme.colors.white};
+  }
 `;
 
 export const Bar = styled.div`
@@ -61,7 +64,4 @@ export const Button = styled.button`
     background-color: ${theme.colors.lightGreen};
   }
 
-  .selected {
-    
-  }
 `;

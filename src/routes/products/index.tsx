@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import * as S from "./styles";
 
 import { Eucatex } from "../../components/Brands/Eucatex";
@@ -9,7 +9,10 @@ import GlobalStyles from "../../styles/GlobalStyles";
 import { WhatsAppButton } from "../../components/WhatsAPP-Float-Button";
 
 function Products() {
-  function displayEucatex() {
+  const [selectedButton, setSelectedButton] = useState("sudati");
+
+
+  function displayEucatex(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     const $eucatex = document.querySelector(".eucatex") as HTMLDivElement;
     const $sudati = document.querySelector(".sudati") as HTMLDivElement;
     const $pcb = document.querySelector(".pcb") as HTMLDivElement;
@@ -17,9 +20,11 @@ function Products() {
     $eucatex.classList.add("show");
     $sudati.classList.remove("show");
     $pcb.classList.remove("show");
+
+    setSelectedButton(e.currentTarget.id)
   }
 
-  function displaySudati() {
+  function displaySudati(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     const $eucatex = document.querySelector(".eucatex") as HTMLDivElement;
     const $sudati = document.querySelector(".sudati") as HTMLDivElement;
     const $pcb = document.querySelector(".pcb") as HTMLDivElement;
@@ -27,9 +32,11 @@ function Products() {
     $eucatex.classList.remove("show");
     $sudati.classList.add("show");
     $pcb.classList.remove("show");
+
+    setSelectedButton(e.currentTarget.id)
   }
 
-  function displayPCB() {
+  function displayPCB(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     const $eucatex = document.querySelector(".eucatex") as HTMLDivElement;
     const $sudati = document.querySelector(".sudati") as HTMLDivElement;
     const $pcb = document.querySelector(".pcb") as HTMLDivElement;
@@ -37,6 +44,8 @@ function Products() {
     $eucatex.classList.remove("show");
     $sudati.classList.remove("show");
     $pcb.classList.add("show");
+
+    setSelectedButton(e.currentTarget.id)
   }
 
   return (
@@ -49,9 +58,9 @@ function Products() {
           </S.Bar>
         </div>
         <div className="buttonsContainer">
-          <S.Button onClick={displaySudati}>SUDATI</S.Button>
-          <S.Button onClick={displayEucatex}>EUCATEX</S.Button>
-          <S.Button onClick={displayPCB}>PLACAS DO BRASIL</S.Button>
+          <S.Button onClick={(e) => displaySudati(e)} className={selectedButton === 'sudati' ? 'selected' : ''} id="sudati">SUDATI</S.Button>
+          <S.Button onClick={(e) => displayEucatex(e)} className={selectedButton === 'eucatex' ? 'selected' : ''} id="eucatex">EUCATEX</S.Button>
+          <S.Button onClick={(e) => displayPCB(e)} className={selectedButton === 'pcb' ? 'selected' : ''} id="pcb">PLACAS DO BRASIL</S.Button>
         </div>
         <div className="display">
           <PCB />
