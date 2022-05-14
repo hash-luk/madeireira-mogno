@@ -17,24 +17,28 @@ function Products() {
     $eucatex?.classList.add("show");
     $sudati?.classList.remove("show");
     $pcb?.classList.remove("show");
+
+    console.log("Entrei aqui")
   }
 
   function displaySudati() {
     $eucatex?.classList.remove("show");
     $sudati?.classList.add("show");
     $pcb?.classList.remove("show");
+    console.log("Entrei aqui")
   }
 
   function displayPCB() {
     $eucatex?.classList.remove("show");
     $sudati?.classList.remove("show");
     $pcb?.classList.add("show");
+    console.log("Entrei aqui")
   }
 
   return (
     <S.Container>
       <WhatsAppButton />
-      <div className="prductsContent">
+      <div className="productsContent">
         <div id="line">
           <S.Bar>
             <h2>PRODUTOS</h2>
