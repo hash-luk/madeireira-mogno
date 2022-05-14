@@ -3,7 +3,7 @@ import { theme } from "../../theme"
 
 export const Container = styled.div`
     #about {
-        width: 90%;
+        max-width: 1300px;
         height: fit-content;
         margin: 0 auto;
         border: 1px solid ${theme.colors.white};
