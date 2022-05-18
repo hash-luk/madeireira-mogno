@@ -52,6 +52,12 @@ export const Container = styled.div`
         justify-content: center;
     }
 
+    @media screen and (max-width: 1366px) {
+        .carousel {
+            width: 100%;
+        }
+    }
+
     @media screen and (max-width: 1024px) {
         padding: 0;
         margin-top: 25px;

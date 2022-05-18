@@ -21,8 +21,10 @@ export default createGlobalStyle`
         font-size: 16px;
     }
 
-    #ts-particles {
-        position: absolute;
-        z-index: -999;
+    @media screen and (max-width: 1032px) {
+        body {
+            overflow-x: hidden;
+        }
     }
+
 `

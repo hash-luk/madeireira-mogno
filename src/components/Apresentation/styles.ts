@@ -65,6 +65,12 @@ export const Container = styled.div`
         }
     }
 
+    @media screen and (max-width: 1366px) {
+        .logodiv {
+            margin-right: 50px;
+        }
+    }
+
     @media screen and (max-width: 768px) {
         display: flex;
         flex-direction: column;
@@ -124,6 +130,9 @@ export const FormGroup = styled.div`
     margin: 250px 0px 0px 300px;
     box-shadow: 1px 1px 1px ${theme.colors.black};
 
+    @media screen and ( max-width: 1366px) {
+        margin: 250px 0px 0px 50px;
+    }
 
     @media screen and (max-width: 1024px) {
         margin: 0;

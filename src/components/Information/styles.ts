@@ -102,6 +102,22 @@ export const Container = styled.div`
         }
     }
 
+    @media screen and (max-width: 1032px) {
+        height: 800px;
+
+        .content {
+            flex-direction: column;
+        }
+
+        #email {
+            #field {
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+
     @media screen and (max-width: 1024px) {
         width: 100%;
         height: 800px;
