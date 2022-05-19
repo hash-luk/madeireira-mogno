@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { theme } from '../../theme';
+import { queries } from '../../styles/queries';
 
 export const Container = styled.div`
     width: 100%;

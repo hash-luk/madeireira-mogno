@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { theme } from '../../theme';
+import { queries } from '../../styles/queries';
 
 
 export const Container = styled.div`
@@ -140,5 +141,15 @@ export const Container = styled.div`
             text-decoration: underline;
         }
             
+    }
+
+    @media screen and (max-width: ${queries.sm_mobile}px) {
+        h2 {
+            margin-bottom: 0;
+        }
+
+        .responsive {
+            justify-content: space-evenly;
+        }
     }
 `

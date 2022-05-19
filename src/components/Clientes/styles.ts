@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { theme } from "../../theme";
+import { queries } from "../../styles/queries";
 
 export const Container = styled.div`
   width: 100%;
@@ -133,6 +134,15 @@ export const Container = styled.div`
     .opinions {
       font-weight: 300;
       max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: ${queries.sm_mobile}px) {
+    margin-bottom: 40px;
+
+    .opinions {
+      width: 90%;
+      height: 240px;
     }
   }
 `;
