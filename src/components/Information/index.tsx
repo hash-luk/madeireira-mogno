@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import * as C from "./styles";
+import * as S from "./styles";
 import EmailIcon from "@mui/icons-material/Email";
 
 import InputMask from "react-input-mask";
@@ -36,6 +36,7 @@ export const Information = () => {
   };
 
   function handleSubmit() {
+
     const nameInput = document.querySelector(".nameField") as HTMLInputElement;
     const emailInput = document.querySelector(
       ".emailField"
@@ -77,7 +78,7 @@ export const Information = () => {
   }
 
   return (
-    <C.Container>
+    <S.Container>
       <Modal
         open={open}
         onClose={handleClose}
@@ -130,9 +131,9 @@ export const Information = () => {
               <TextArea setVariableValue={setMessage} message={message} className="messageField"/>
             </div>
           </div>
-          <C.SendButton type="submit" onClick={handleSubmit}>
+          <S.SendButton type="submit" onClick={handleSubmit}>
             ENVIAR
-          </C.SendButton>
+          </S.SendButton>
         </div>
         <div id="map">
           <iframe
@@ -142,6 +143,6 @@ export const Information = () => {
           ></iframe>
         </div>
       </div>
-    </C.Container>
+    </S.Container>
   );
 };
