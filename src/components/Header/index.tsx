@@ -32,10 +32,10 @@ export const Header = () => {
       </div>
       <div id="links">
         <div>
-          <C.ALinks>INICIO</C.ALinks>
-          <C.ALinks>PRODUTOS</C.ALinks>
-          <C.ALinks>CONTATO</C.ALinks>
-          <C.ALinks>SOBRE</C.ALinks>
+          <C.ALinks><Link to="/">INICIO</Link> </C.ALinks>
+          <C.ALinks><Link to="produtos">PRODUTOS</Link></C.ALinks>
+          <C.ALinks><Link to="contato">CONTATO</Link></C.ALinks>
+          <C.ALinks><Link to="sobre">SOBRE</Link></C.ALinks>
         </div>
       </div>
       <div className="menu">
