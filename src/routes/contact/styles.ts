@@ -138,7 +138,7 @@ export const MessageBox = styled.textarea`
   height: 100%;
   background-color: ${theme.colors.chineseWhite};
   resize: none;
-  padding: 0 5px;
+  padding: 5px 5px;
 `;
 
 export const Button = styled.button`
